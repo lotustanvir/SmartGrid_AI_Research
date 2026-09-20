@@ -1,0 +1,21 @@
+# Default research configuration (MODEL-FIRST foundation).
+# Real-dataset wiring happens only after models are structurally ready.
+
+project:
+  name: "SmartGrid_AI_Research"
+  seed: 42
+  python: "3.11"
+
+evaluation:
+  epsilon: 1.0e-08   # zero-guard for percentage errors
+
+paths:
+  # Relative to repo root. Never hardcode absolute Windows paths.
+  configs_dir: "configs"
+  src_dir: "src"
+  tests_dir: "tests"
+  smoke_results_dir: "results/smoke_tests"
+  saved_models_dir: "saved_models"
+
+# Model hyperparameters live here (per model) once Phases 2+ are approved.
+models: {}

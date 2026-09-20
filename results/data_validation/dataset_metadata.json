@@ -1,0 +1,140 @@
+{
+  "source": "dataset/processed/pjm_smart_grid_2020.csv",
+  "mapping": {
+    "timestamp_col": "timestamp",
+    "target_col": "pjm_load_mw",
+    "group_col": null,
+    "exogenous": {
+      "solar": "solar_generation_mw",
+      "wind": "wind_generation_mw"
+    }
+  },
+  "n_observations": 8784,
+  "sampling_frequency": "h",
+  "target": "target",
+  "features": [
+    "solar",
+    "wind",
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "lag_1",
+    "lag_24",
+    "lag_168",
+    "rolling_mean_24",
+    "rolling_std_24",
+    "rolling_mean_168",
+    "rolling_std_168"
+  ],
+  "n_groups": 1,
+  "groups": [
+    "single"
+  ],
+  "train_period": {
+    "rows": 6148,
+    "start": "2020-01-01 05:00:00",
+    "end": "2020-09-13 08:00:00"
+  },
+  "validation_period": {
+    "rows": 1318,
+    "start": "2020-09-13 09:00:00",
+    "end": "2020-11-07 06:00:00"
+  },
+  "test_period": {
+    "rows": 1318,
+    "start": "2020-11-07 07:00:00",
+    "end": "2021-01-01 04:00:00"
+  },
+  "missingness_summary": {
+    "timestamp": 0,
+    "target": 0,
+    "group_id": 0,
+    "solar": 0,
+    "wind": 0
+  },
+  "adapter_info": {
+    "tabular": {
+      "train": {
+        "rows_before": 6148,
+        "rows_after": 5980,
+        "warmup_rows_dropped": 168
+      },
+      "val": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      },
+      "test": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      }
+    },
+    "tft": {
+      "rows_before": 8784,
+      "rows_after": 8616,
+      "warmup_rows_dropped": 168,
+      "tft_columns": [
+        "time_idx",
+        "group_id",
+        "electricity_demand",
+        "hour",
+        "day_of_week",
+        "solar_generation",
+        "wind_generation",
+        "lag_1",
+        "lag_24",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_mean_168",
+        "rolling_std_168"
+      ],
+      "n_groups": 1
+    }
+  },
+  "leakage_checks": [
+    {
+      "check": "chronological_splits",
+      "passed": true
+    },
+    {
+      "check": "lags_use_past_only",
+      "passed": true,
+      "method": "group-wise shift(lag)"
+    },
+    {
+      "check": "rolling_uses_shift1",
+      "passed": true,
+      "method": "shift(1) then rolling, per group"
+    },
+    {
+      "check": "transforms_fit_train_only",
+      "passed": true,
+      "method": "adapters expose fit_scaler for train-only fitting"
+    }
+  ],
+  "shapes": {
+    "X_train": [
+      5980,
+      21
+    ],
+    "X_val": [
+      1318,
+      21
+    ],
+    "X_test": [
+      1318,
+      21
+    ]
+  }
+}

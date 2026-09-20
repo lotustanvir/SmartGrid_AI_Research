@@ -1,0 +1,24 @@
+data:
+  path: "dataset/processed/pjm_smart_grid_2020.csv"
+  timestamp_col: "timestamp"
+  target_col: "pjm_load_mw"
+  group_col: null
+  expected_freq: "h"
+  allow_negative_target: false
+  max_target_gap: 3
+  weather:
+    temperature: null
+    humidity: null
+  renewable:
+    solar: "solar_generation_mw"
+    wind: "wind_generation_mw"
+cleaning:
+  exogenous_interp_method: "time"
+  exogenous_interp_limit: 6
+  allow_ffill_bfill: false
+  drop_target_na: true
+features:
+  calendar: true
+  cyclical: true
+  lags: [1, 24, 168]
+  rolling_windows: [24, 168]

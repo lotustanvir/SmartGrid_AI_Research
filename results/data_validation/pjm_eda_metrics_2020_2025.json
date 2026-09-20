@@ -1,0 +1,250 @@
+{
+  "correlation_matrix": {
+    "load_wind": -0.1481,
+    "load_solar": 0.2613,
+    "wind_solar": -0.1095
+  },
+  "annual_statistics": {
+    "2020": {
+      "avg_load_mw": 172419.93,
+      "avg_wind_mw": 3005.47,
+      "avg_solar_mw": 425.0,
+      "wind_penetration_pct": 1.74,
+      "solar_penetration_pct": 0.25,
+      "total_renewable_pct": 1.99
+    },
+    "2021": {
+      "avg_load_mw": 178707.45,
+      "avg_wind_mw": 3152.05,
+      "avg_solar_mw": 792.95,
+      "wind_penetration_pct": 1.76,
+      "solar_penetration_pct": 0.44,
+      "total_renewable_pct": 2.21
+    },
+    "2022": {
+      "avg_load_mw": 181531.03,
+      "avg_wind_mw": 3592.4,
+      "avg_solar_mw": 1006.13,
+      "wind_penetration_pct": 1.98,
+      "solar_penetration_pct": 0.55,
+      "total_renewable_pct": 2.53
+    },
+    "2023": {
+      "avg_load_mw": 175821.95,
+      "avg_wind_mw": 3296.55,
+      "avg_solar_mw": 1219.02,
+      "wind_penetration_pct": 1.87,
+      "solar_penetration_pct": 0.69,
+      "total_renewable_pct": 2.57
+    },
+    "2024": {
+      "avg_load_mw": 182153.09,
+      "avg_wind_mw": 3569.59,
+      "avg_solar_mw": 1917.15,
+      "wind_penetration_pct": 1.96,
+      "solar_penetration_pct": 1.05,
+      "total_renewable_pct": 3.01
+    },
+    "2025": {
+      "avg_load_mw": 189057.81,
+      "avg_wind_mw": 3678.02,
+      "avg_solar_mw": 2743.55,
+      "wind_penetration_pct": 1.95,
+      "solar_penetration_pct": 1.45,
+      "total_renewable_pct": 3.4
+    },
+    "2026": {
+      "avg_load_mw": 208021.31,
+      "avg_wind_mw": 8153.06,
+      "avg_solar_mw": 0.0,
+      "wind_penetration_pct": 3.92,
+      "solar_penetration_pct": 0.0,
+      "total_renewable_pct": 3.92
+    }
+  },
+  "monthly_patterns": {
+    "Jan": {
+      "avg_load_mw": 196448.37,
+      "avg_wind_mw": 4055.12,
+      "avg_solar_mw": 684.6
+    },
+    "Feb": {
+      "avg_load_mw": 188381.72,
+      "avg_wind_mw": 4375.77,
+      "avg_solar_mw": 938.44
+    },
+    "Mar": {
+      "avg_load_mw": 167211.7,
+      "avg_wind_mw": 4774.76,
+      "avg_solar_mw": 1277.9
+    },
+    "Apr": {
+      "avg_load_mw": 154858.68,
+      "avg_wind_mw": 4234.75,
+      "avg_solar_mw": 1548.07
+    },
+    "May": {
+      "avg_load_mw": 158697.52,
+      "avg_wind_mw": 3124.37,
+      "avg_solar_mw": 1611.95
+    },
+    "Jun": {
+      "avg_load_mw": 189472.75,
+      "avg_wind_mw": 2508.62,
+      "avg_solar_mw": 1890.43
+    },
+    "Jul": {
+      "avg_load_mw": 213292.2,
+      "avg_wind_mw": 1507.93,
+      "avg_solar_mw": 1862.09
+    },
+    "Aug": {
+      "avg_load_mw": 202370.98,
+      "avg_wind_mw": 1570.39,
+      "avg_solar_mw": 1754.37
+    },
+    "Sep": {
+      "avg_load_mw": 174657.27,
+      "avg_wind_mw": 2126.9,
+      "avg_solar_mw": 1505.0
+    },
+    "Oct": {
+      "avg_load_mw": 157093.43,
+      "avg_wind_mw": 3486.91,
+      "avg_solar_mw": 1349.26
+    },
+    "Nov": {
+      "avg_load_mw": 167720.61,
+      "avg_wind_mw": 4593.13,
+      "avg_solar_mw": 1010.82
+    },
+    "Dec": {
+      "avg_load_mw": 188846.72,
+      "avg_wind_mw": 4317.61,
+      "avg_solar_mw": 754.63
+    }
+  },
+  "renewable_penetration": {},
+  "hourly_patterns": {
+    "0": {
+      "avg_load_mw": 197044.18,
+      "avg_wind_mw": 3386.9,
+      "avg_solar_mw": 20.88
+    },
+    "1": {
+      "avg_load_mw": 191707.3,
+      "avg_wind_mw": 3566.14,
+      "avg_solar_mw": 0.09
+    },
+    "2": {
+      "avg_load_mw": 182921.32,
+      "avg_wind_mw": 3719.07,
+      "avg_solar_mw": 0.07
+    },
+    "3": {
+      "avg_load_mw": 172896.27,
+      "avg_wind_mw": 3788.37,
+      "avg_solar_mw": 0.06
+    },
+    "4": {
+      "avg_load_mw": 164126.79,
+      "avg_wind_mw": 3782.38,
+      "avg_solar_mw": 0.04
+    },
+    "5": {
+      "avg_load_mw": 157836.84,
+      "avg_wind_mw": 3746.04,
+      "avg_solar_mw": 0.04
+    },
+    "6": {
+      "avg_load_mw": 153912.45,
+      "avg_wind_mw": 3682.04,
+      "avg_solar_mw": 0.04
+    },
+    "7": {
+      "avg_load_mw": 151969.12,
+      "avg_wind_mw": 3600.2,
+      "avg_solar_mw": 0.04
+    },
+    "8": {
+      "avg_load_mw": 152420.64,
+      "avg_wind_mw": 3529.67,
+      "avg_solar_mw": 0.04
+    },
+    "9": {
+      "avg_load_mw": 156450.8,
+      "avg_wind_mw": 3468.47,
+      "avg_solar_mw": 0.14
+    },
+    "10": {
+      "avg_load_mw": 164258.03,
+      "avg_wind_mw": 3419.24,
+      "avg_solar_mw": 57.79
+    },
+    "11": {
+      "avg_load_mw": 173224.91,
+      "avg_wind_mw": 3369.38,
+      "avg_solar_mw": 515.3
+    },
+    "12": {
+      "avg_load_mw": 179910.5,
+      "avg_wind_mw": 3235.04,
+      "avg_solar_mw": 1526.0
+    },
+    "13": {
+      "avg_load_mw": 183550.77,
+      "avg_wind_mw": 3046.06,
+      "avg_solar_mw": 2649.07
+    },
+    "14": {
+      "avg_load_mw": 186015.66,
+      "avg_wind_mw": 2948.02,
+      "avg_solar_mw": 3368.49
+    },
+    "15": {
+      "avg_load_mw": 188106.53,
+      "avg_wind_mw": 2952.54,
+      "avg_solar_mw": 3669.76
+    },
+    "16": {
+      "avg_load_mw": 190002.54,
+      "avg_wind_mw": 3019.94,
+      "avg_solar_mw": 3760.91
+    },
+    "17": {
+      "avg_load_mw": 191653.49,
+      "avg_wind_mw": 3109.96,
+      "avg_solar_mw": 3738.69
+    },
+    "18": {
+      "avg_load_mw": 192740.45,
+      "avg_wind_mw": 3210.94,
+      "avg_solar_mw": 3627.3
+    },
+    "19": {
+      "avg_load_mw": 193726.92,
+      "avg_wind_mw": 3297.86,
+      "avg_solar_mw": 3392.19
+    },
+    "20": {
+      "avg_load_mw": 195585.33,
+      "avg_wind_mw": 3349.29,
+      "avg_solar_mw": 2889.39
+    },
+    "21": {
+      "avg_load_mw": 198279.57,
+      "avg_wind_mw": 3348.04,
+      "avg_solar_mw": 1969.9
+    },
+    "22": {
+      "avg_load_mw": 200514.74,
+      "avg_wind_mw": 3310.56,
+      "avg_solar_mw": 962.55
+    },
+    "23": {
+      "avg_load_mw": 199932.79,
+      "avg_wind_mw": 3299.92,
+      "avg_solar_mw": 261.53
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "rows_original": 8784,
+  "unparseable_timestamps_dropped": 0,
+  "duplicates_removed": 0,
+  "grid_frequency": "h",
+  "missing_before": {
+    "timestamp": 0,
+    "target": 0,
+    "group_id": 0,
+    "solar": 0,
+    "wind": 0
+  },
+  "gap_statistics": {
+    "n_gaps": 0,
+    "longest_gap_periods": 0,
+    "gap_periods_total": 0
+  },
+  "exogenous_interpolated_cells": 0,
+  "ffill_bfill_applied": false,
+  "target_interpolated_cells": 0,
+  "dropped_rows_target_na": 0,
+  "missing_after": {
+    "timestamp": 0,
+    "target": 0,
+    "group_id": 0,
+    "solar": 0,
+    "wind": 0
+  },
+  "rows_final": 8784
+}

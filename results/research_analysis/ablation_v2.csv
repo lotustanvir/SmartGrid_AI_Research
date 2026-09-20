@@ -1,0 +1,5 @@
+Experiment,N_Features,Val_MAE,Val_RMSE,Val_R2
+A_Historical,5,5224.39,6500.45,0.964469
+B_Historical_Temporal,9,9878.3,13254.82,0.85227
+C_Historical_Renewable,9,17772.8,22554.88,0.572237
+D_Full,13,11568.77,14729.79,0.817562

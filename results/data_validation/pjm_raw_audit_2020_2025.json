@@ -1,0 +1,1653 @@
+{
+  "folder_check": {
+    "2020": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    },
+    "2021": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    },
+    "2022": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    },
+    "2023": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    },
+    "2024": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    },
+    "2025": {
+      "load": true,
+      "wind": true,
+      "solar": true,
+      "unexpected_files": [],
+      "status": "OK"
+    }
+  },
+  "file_validation": {
+    "2020": {
+      "hrl_load_metered.csv": {
+        "rows": 263520,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.045,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 43920,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.383,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 51336,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.738,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    },
+    "2021": {
+      "hrl_load_metered.csv": {
+        "rows": 262800,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.014,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 43800,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.377,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.814,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    },
+    "2022": {
+      "hrl_load_metered.csv": {
+        "rows": 262800,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.022,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 50904,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.755,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.815,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    },
+    "2023": {
+      "hrl_load_metered.csv": {
+        "rows": 262800,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.011,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.841,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.819,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    },
+    "2024": {
+      "hrl_load_metered.csv": {
+        "rows": 263520,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.072,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 52704,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.856,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 52704,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.838,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    },
+    "2025": {
+      "hrl_load_metered.csv": {
+        "rows": 262800,
+        "columns": 8,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "size_mb": 19.025,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "size_mb": 2.85,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "rows": 52560,
+        "columns": 4,
+        "column_names": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "size_mb": 2.834,
+        "encoding": "utf-8",
+        "columns_match_expected": true,
+        "status": "OK"
+      }
+    }
+  },
+  "date_ranges": {
+    "2020": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2020-01-01 05:00:00",
+        "end_utc": "2021-01-01 04:00:00",
+        "total_timestamps": 263520,
+        "unique_timestamps": 8784,
+        "duplicates": 254736,
+        "expected_hours": 8784,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2020-01-01 05:00:00",
+        "end_utc": "2021-01-01 04:00:00",
+        "total_timestamps": 43920,
+        "unique_timestamps": 8784,
+        "duplicates": 35136,
+        "expected_hours": 8784,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2020-01-01 05:00:00",
+        "end_utc": "2021-01-01 04:00:00",
+        "total_timestamps": 51336,
+        "unique_timestamps": 8784,
+        "duplicates": 42552,
+        "expected_hours": 8784,
+        "status": "OK"
+      }
+    },
+    "2021": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2021-01-01 05:00:00",
+        "end_utc": "2022-01-01 04:00:00",
+        "total_timestamps": 262800,
+        "unique_timestamps": 8760,
+        "duplicates": 254040,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2021-01-01 05:00:00",
+        "end_utc": "2022-01-01 04:00:00",
+        "total_timestamps": 43800,
+        "unique_timestamps": 8760,
+        "duplicates": 35040,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2021-01-01 05:00:00",
+        "end_utc": "2022-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      }
+    },
+    "2022": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2022-01-01 05:00:00",
+        "end_utc": "2023-01-01 04:00:00",
+        "total_timestamps": 262800,
+        "unique_timestamps": 8760,
+        "duplicates": 254040,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2022-01-01 05:00:00",
+        "end_utc": "2023-01-01 04:00:00",
+        "total_timestamps": 50904,
+        "unique_timestamps": 8760,
+        "duplicates": 42144,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2022-01-01 05:00:00",
+        "end_utc": "2023-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      }
+    },
+    "2023": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2023-01-01 05:00:00",
+        "end_utc": "2024-01-01 04:00:00",
+        "total_timestamps": 262800,
+        "unique_timestamps": 8760,
+        "duplicates": 254040,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2023-01-01 05:00:00",
+        "end_utc": "2024-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2023-01-01 05:00:00",
+        "end_utc": "2024-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      }
+    },
+    "2024": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2024-01-01 05:00:00",
+        "end_utc": "2025-01-01 04:00:00",
+        "total_timestamps": 263520,
+        "unique_timestamps": 8784,
+        "duplicates": 254736,
+        "expected_hours": 8784,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2024-01-01 05:00:00",
+        "end_utc": "2025-01-01 04:00:00",
+        "total_timestamps": 52704,
+        "unique_timestamps": 8784,
+        "duplicates": 43920,
+        "expected_hours": 8784,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2024-01-01 05:00:00",
+        "end_utc": "2025-01-01 04:00:00",
+        "total_timestamps": 52704,
+        "unique_timestamps": 8784,
+        "duplicates": 43920,
+        "expected_hours": 8784,
+        "status": "OK"
+      }
+    },
+    "2025": {
+      "hrl_load_metered.csv": {
+        "start_utc": "2025-01-01 05:00:00",
+        "end_utc": "2026-01-01 04:00:00",
+        "total_timestamps": 262800,
+        "unique_timestamps": 8760,
+        "duplicates": 254040,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "wind_gen.csv": {
+        "start_utc": "2025-01-01 05:00:00",
+        "end_utc": "2026-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      },
+      "solar_gen.csv": {
+        "start_utc": "2025-01-01 05:00:00",
+        "end_utc": "2026-01-01 04:00:00",
+        "total_timestamps": 52560,
+        "unique_timestamps": 8760,
+        "duplicates": 43800,
+        "expected_hours": 8760,
+        "status": "OK"
+      }
+    }
+  },
+  "load_analysis": {
+    "2020": {
+      "total_rows": 263520,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 254736,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 3,
+      "mw_min": 0.0,
+      "mw_max": 144587.98,
+      "mw_mean": 5747.45
+    },
+    "2021": {
+      "total_rows": 262800,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 254040,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 3,
+      "mw_min": 0.0,
+      "mw_max": 148770.347,
+      "mw_mean": 5956.5
+    },
+    "2022": {
+      "total_rows": 262800,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 254040,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 0,
+      "mw_min": 12.0,
+      "mw_max": 147715.655,
+      "mw_mean": 6051.11
+    },
+    "2023": {
+      "total_rows": 262800,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 254040,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 3,
+      "mw_min": 0.0,
+      "mw_max": 147178.133,
+      "mw_mean": 5861.06
+    },
+    "2024": {
+      "total_rows": 263520,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 254736,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 3,
+      "mw_min": 0.0,
+      "mw_max": 152551.295,
+      "mw_mean": 6071.67
+    },
+    "2025": {
+      "total_rows": 262800,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 254040,
+      "unique_zones": 22,
+      "zones": [
+        "AE",
+        "AEP",
+        "AP",
+        "ATSI",
+        "BC",
+        "CE",
+        "DAY",
+        "DEOK",
+        "DOM",
+        "DPL",
+        "DUQ",
+        "EKPC",
+        "JC",
+        "ME",
+        "OVEC",
+        "PE",
+        "PEP",
+        "PL",
+        "PN",
+        "PS",
+        "RECO",
+        "RTO"
+      ],
+      "unique_load_areas": 30,
+      "missing_mw": 0,
+      "negative_mw": 0,
+      "zero_mw": 3,
+      "mw_min": 0.0,
+      "mw_max": 160154.429,
+      "mw_mean": 6302.6
+    }
+  },
+  "wind_analysis": {
+    "2020": {
+      "total_rows": 43920,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 35136,
+      "areas": [
+        "MIDATL",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 5,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 418,
+      "wind_min": -15.048,
+      "wind_max": 9118.498,
+      "wind_mean": 1782.74,
+      "rows_per_area": {
+        "MIDATL": 8784,
+        "SOUTH": 8784,
+        "WEST": 8784,
+        "RTO": 8784,
+        "RFC": 8784
+      }
+    },
+    "2021": {
+      "total_rows": 43800,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 35040,
+      "areas": [
+        "MIDATL",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 5,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 409,
+      "wind_min": -6.357,
+      "wind_max": 8910.557,
+      "wind_mean": 1872.37,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2022": {
+      "total_rows": 50904,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 42144,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 291,
+      "wind_min": -11.029,
+      "wind_max": 9401.665,
+      "wind_mean": 1838.14,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 7104,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2023": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 303,
+      "wind_min": -6.81,
+      "wind_max": 9993.227,
+      "wind_mean": 1632.66,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2024": {
+      "total_rows": 52704,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 43920,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 378,
+      "wind_min": -5.952,
+      "wind_max": 9767.545,
+      "wind_mean": 1772.27,
+      "rows_per_area": {
+        "MIDATL": 8784,
+        "OTHER": 8784,
+        "SOUTH": 8784,
+        "WEST": 8784,
+        "RTO": 8784,
+        "RFC": 8784
+      }
+    },
+    "2025": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_wind": 0,
+      "negative_wind": 286,
+      "wind_min": -11.879,
+      "wind_max": 10057.502,
+      "wind_mean": 1818.02,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    }
+  },
+  "solar_analysis": {
+    "2020": {
+      "total_rows": 51336,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 42552,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 21931,
+      "solar_min": -140.598,
+      "solar_max": 2005.26,
+      "solar_mean": 174.49,
+      "rows_per_area": {
+        "MIDATL": 8784,
+        "OTHER": 7416,
+        "SOUTH": 8784,
+        "WEST": 8784,
+        "RTO": 8784,
+        "RFC": 8784
+      }
+    },
+    "2021": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 22335,
+      "solar_min": -26.523,
+      "solar_max": 3455.115,
+      "solar_mean": 311.46,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2022": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 20443,
+      "solar_min": -10.546,
+      "solar_max": 4313.81,
+      "solar_mean": 394.33,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2023": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 21356,
+      "solar_min": -37.804,
+      "solar_max": 5346.609,
+      "solar_mean": 495.93,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    },
+    "2024": {
+      "total_rows": 52704,
+      "unique_timestamps": 8784,
+      "duplicate_timestamps": 43920,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 23967,
+      "solar_min": -21.179,
+      "solar_max": 8258.959,
+      "solar_mean": 822.58,
+      "rows_per_area": {
+        "MIDATL": 8784,
+        "OTHER": 8784,
+        "SOUTH": 8784,
+        "WEST": 8784,
+        "RTO": 8784,
+        "RFC": 8784
+      }
+    },
+    "2025": {
+      "total_rows": 52560,
+      "unique_timestamps": 8760,
+      "duplicate_timestamps": 43800,
+      "areas": [
+        "MIDATL",
+        "OTHER",
+        "RFC",
+        "RTO",
+        "SOUTH",
+        "WEST"
+      ],
+      "area_count": 6,
+      "has_rto": true,
+      "missing_solar": 0,
+      "negative_solar": 24429,
+      "solar_min": -20.276,
+      "solar_max": 11905.724,
+      "solar_mean": 1207.55,
+      "rows_per_area": {
+        "MIDATL": 8760,
+        "OTHER": 8760,
+        "SOUTH": 8760,
+        "WEST": 8760,
+        "RTO": 8760,
+        "RFC": 8760
+      }
+    }
+  },
+  "cross_year_consistency": {
+    "hrl_load_metered.csv": {
+      "headers_per_year": {
+        "2020": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "2021": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "2022": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "2023": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "2024": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ],
+        "2025": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "nerc_region",
+          "mkt_region",
+          "zone",
+          "load_area",
+          "mw",
+          "is_verified"
+        ]
+      },
+      "headers_consistent": true,
+      "encoding": [
+        "utf-8"
+      ],
+      "encoding_consistent": true,
+      "timestamp_format": "MM/DD/YYYY HH:MM:SS AM/PM (confirmed)",
+      "timezone": "UTC",
+      "units": "MW"
+    },
+    "wind_gen.csv": {
+      "headers_per_year": {
+        "2020": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "2021": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "2022": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "2023": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "2024": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ],
+        "2025": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "wind_generation_mw"
+        ]
+      },
+      "headers_consistent": true,
+      "encoding": [
+        "utf-8"
+      ],
+      "encoding_consistent": true,
+      "timestamp_format": "MM/DD/YYYY HH:MM:SS AM/PM (confirmed)",
+      "timezone": "UTC",
+      "units": "MW"
+    },
+    "solar_gen.csv": {
+      "headers_per_year": {
+        "2020": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "2021": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "2022": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "2023": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "2024": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ],
+        "2025": [
+          "datetime_beginning_utc",
+          "datetime_beginning_ept",
+          "area",
+          "solar_generation_mw"
+        ]
+      },
+      "headers_consistent": true,
+      "encoding": [
+        "utf-8"
+      ],
+      "encoding_consistent": true,
+      "timestamp_format": "MM/DD/YYYY HH:MM:SS AM/PM (confirmed)",
+      "timezone": "UTC",
+      "units": "MW"
+    }
+  },
+  "hourly_continuity": {
+    "2020": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2020-01-01 05:00:00": 30,
+          "2020-01-01 06:00:00": 30,
+          "2020-01-01 07:00:00": 30,
+          "2020-01-01 08:00:00": 30,
+          "2020-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2021-01-01 04:00:00": 5,
+          "2021-01-01 03:00:00": 5,
+          "2021-01-01 02:00:00": 5,
+          "2021-01-01 01:00:00": 5,
+          "2021-01-01 00:00:00": 5
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2021-01-01 04:00:00": 6,
+          "2021-01-01 03:00:00": 6,
+          "2021-01-01 02:00:00": 6,
+          "2021-01-01 01:00:00": 6,
+          "2021-01-01 00:00:00": 6
+        }
+      }
+    },
+    "2021": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2021-01-01 05:00:00": 30,
+          "2021-01-01 06:00:00": 30,
+          "2021-01-01 07:00:00": 30,
+          "2021-01-01 08:00:00": 30,
+          "2021-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2022-01-01 04:00:00": 5,
+          "2022-01-01 03:00:00": 5,
+          "2022-01-01 02:00:00": 5,
+          "2022-01-01 01:00:00": 5,
+          "2022-01-01 00:00:00": 5
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2022-01-01 04:00:00": 6,
+          "2022-01-01 03:00:00": 6,
+          "2022-01-01 02:00:00": 6,
+          "2022-01-01 01:00:00": 6,
+          "2022-01-01 00:00:00": 6
+        }
+      }
+    },
+    "2022": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2022-01-01 05:00:00": 30,
+          "2022-01-01 06:00:00": 30,
+          "2022-01-01 07:00:00": 30,
+          "2022-01-01 08:00:00": 30,
+          "2022-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2023-01-01 04:00:00": 6,
+          "2023-01-01 03:00:00": 6,
+          "2023-01-01 02:00:00": 6,
+          "2023-01-01 01:00:00": 6,
+          "2023-01-01 00:00:00": 6
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2023-01-01 04:00:00": 6,
+          "2023-01-01 03:00:00": 6,
+          "2023-01-01 02:00:00": 6,
+          "2023-01-01 01:00:00": 6,
+          "2023-01-01 00:00:00": 6
+        }
+      }
+    },
+    "2023": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2023-01-01 05:00:00": 30,
+          "2023-01-01 06:00:00": 30,
+          "2023-01-01 07:00:00": 30,
+          "2023-01-01 08:00:00": 30,
+          "2023-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2024-01-01 04:00:00": 6,
+          "2024-01-01 03:00:00": 6,
+          "2024-01-01 02:00:00": 6,
+          "2024-01-01 01:00:00": 6,
+          "2024-01-01 00:00:00": 6
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2024-01-01 04:00:00": 6,
+          "2024-01-01 03:00:00": 6,
+          "2024-01-01 02:00:00": 6,
+          "2024-01-01 01:00:00": 6,
+          "2024-01-01 00:00:00": 6
+        }
+      }
+    },
+    "2024": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2024-01-01 05:00:00": 30,
+          "2024-01-01 06:00:00": 30,
+          "2024-01-01 07:00:00": 30,
+          "2024-01-01 08:00:00": 30,
+          "2024-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2025-01-01 04:00:00": 6,
+          "2025-01-01 03:00:00": 6,
+          "2025-01-01 02:00:00": 6,
+          "2025-01-01 01:00:00": 6,
+          "2025-01-01 00:00:00": 6
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8784,
+        "actual_unique_timestamps": 8784,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8784,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2025-01-01 04:00:00": 6,
+          "2025-01-01 03:00:00": 6,
+          "2025-01-01 02:00:00": 6,
+          "2025-01-01 01:00:00": 6,
+          "2025-01-01 00:00:00": 6
+        }
+      }
+    },
+    "2025": {
+      "hrl_load_metered.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2025-01-01 05:00:00": 30,
+          "2025-01-01 06:00:00": 30,
+          "2025-01-01 07:00:00": 30,
+          "2025-01-01 08:00:00": 30,
+          "2025-01-01 09:00:00": 30
+        }
+      },
+      "wind_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2026-01-01 04:00:00": 6,
+          "2026-01-01 03:00:00": 6,
+          "2026-01-01 02:00:00": 6,
+          "2026-01-01 01:00:00": 6,
+          "2026-01-01 00:00:00": 6
+        }
+      },
+      "solar_gen.csv": {
+        "expected_hours_in_range": 8760,
+        "actual_unique_timestamps": 8760,
+        "missing_hours_count": 0,
+        "extra_hours_count": 0,
+        "duplicate_timestamps": 8760,
+        "coverage_pct": 100.0,
+        "first_5_missing": [],
+        "first_5_extra": [],
+        "sample_duplicates": {
+          "2026-01-01 04:00:00": 6,
+          "2026-01-01 03:00:00": 6,
+          "2026-01-01 02:00:00": 6,
+          "2026-01-01 01:00:00": 6,
+          "2026-01-01 00:00:00": 6
+        }
+      }
+    }
+  },
+  "quality_scores": {
+    "2020": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    },
+    "2021": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    },
+    "2022": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    },
+    "2023": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    },
+    "2024": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    },
+    "2025": {
+      "load": 9,
+      "wind": 8,
+      "solar": 8,
+      "overall": 8.3,
+      "ready": true
+    }
+  },
+  "problems": [
+    "2020/Load: 254736 duplicate timestamps",
+    "2020/Wind: 35136 duplicate timestamps",
+    "2020/Wind: 418 negative wind values",
+    "2020/Solar: 42552 duplicate timestamps",
+    "2020/Solar: 21931 negative solar values",
+    "2021/Load: 254040 duplicate timestamps",
+    "2021/Wind: 35040 duplicate timestamps",
+    "2021/Wind: 409 negative wind values",
+    "2021/Solar: 43800 duplicate timestamps",
+    "2021/Solar: 22335 negative solar values",
+    "2022/Load: 254040 duplicate timestamps",
+    "2022/Wind: 42144 duplicate timestamps",
+    "2022/Wind: 291 negative wind values",
+    "2022/Solar: 43800 duplicate timestamps",
+    "2022/Solar: 20443 negative solar values",
+    "2023/Load: 254040 duplicate timestamps",
+    "2023/Wind: 43800 duplicate timestamps",
+    "2023/Wind: 303 negative wind values",
+    "2023/Solar: 43800 duplicate timestamps",
+    "2023/Solar: 21356 negative solar values",
+    "2024/Load: 254736 duplicate timestamps",
+    "2024/Wind: 43920 duplicate timestamps",
+    "2024/Wind: 378 negative wind values",
+    "2024/Solar: 43920 duplicate timestamps",
+    "2024/Solar: 23967 negative solar values",
+    "2025/Load: 254040 duplicate timestamps",
+    "2025/Wind: 43800 duplicate timestamps",
+    "2025/Wind: 286 negative wind values",
+    "2025/Solar: 43800 duplicate timestamps",
+    "2025/Solar: 24429 negative solar values"
+  ],
+  "audit_summary": {
+    "total_problems": 30,
+    "overall_status": "READY",
+    "years_audited": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "files_per_year": 3,
+    "total_files": 18,
+    "ready_for_integration": true
+  }
+}

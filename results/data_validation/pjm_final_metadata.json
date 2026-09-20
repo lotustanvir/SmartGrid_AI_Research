@@ -1,0 +1,355 @@
+{
+  "pipeline": "Phase 6A Real PJM Pipeline",
+  "source": "dataset/processed/pjm_smart_grid_2020.csv",
+  "timestamp": "2026-09-16T01:32:29.783904",
+  "mapping": {
+    "timestamp_col": "timestamp",
+    "target_col": "pjm_load_mw",
+    "group_col": null,
+    "exogenous": {
+      "solar": "solar_generation_mw",
+      "wind": "wind_generation_mw"
+    }
+  },
+  "total_rows": 8784,
+  "feature_count": 19,
+  "generated_features": [
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "lag_1",
+    "lag_24",
+    "lag_168",
+    "rolling_mean_24",
+    "rolling_std_24",
+    "rolling_mean_168",
+    "rolling_std_168"
+  ],
+  "model_features": [
+    "solar",
+    "wind",
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "week_of_year",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "lag_1",
+    "lag_24",
+    "lag_168",
+    "rolling_mean_24",
+    "rolling_std_24",
+    "rolling_mean_168",
+    "rolling_std_168"
+  ],
+  "n_groups": 1,
+  "groups": [
+    "single"
+  ],
+  "train": {
+    "size": 6148,
+    "period": {
+      "rows": 6148,
+      "start": "2020-01-01 05:00:00",
+      "end": "2020-09-13 08:00:00"
+    },
+    "scaler_fitted": true
+  },
+  "validation": {
+    "size": 1318,
+    "period": {
+      "rows": 1318,
+      "start": "2020-09-13 09:00:00",
+      "end": "2020-11-07 06:00:00"
+    },
+    "scaler_transformed": true
+  },
+  "test": {
+    "size": 1318,
+    "period": {
+      "rows": 1318,
+      "start": "2020-11-07 07:00:00",
+      "end": "2021-01-01 04:00:00"
+    },
+    "scaler_transformed": true
+  },
+  "date_boundaries": {
+    "overall_start": "2020-01-01 05:00:00",
+    "overall_end": "2021-01-01 04:00:00",
+    "train_start": "2020-01-01 05:00:00",
+    "train_end": "2020-09-13 08:00:00",
+    "validation_start": "2020-09-13 09:00:00",
+    "validation_end": "2020-11-07 06:00:00",
+    "test_start": "2020-11-07 07:00:00",
+    "test_end": "2021-01-01 04:00:00"
+  },
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "shuffle": false,
+  "scaler": {
+    "type": "StandardScaler",
+    "fit_on": "train_only",
+    "n_features": 21,
+    "feature_names": [
+      "solar",
+      "wind",
+      "hour",
+      "day_of_week",
+      "day_of_month",
+      "month",
+      "week_of_year",
+      "is_weekend",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos",
+      "month_sin",
+      "month_cos",
+      "lag_1",
+      "lag_24",
+      "lag_168",
+      "rolling_mean_24",
+      "rolling_std_24",
+      "rolling_mean_168",
+      "rolling_std_168"
+    ],
+    "mean": {
+      "solar": 448.475654180602,
+      "wind": 2735.525175083612,
+      "hour": 11.496655518394649,
+      "day_of_week": 3.0133779264214047,
+      "day_of_month": 15.644983277591972,
+      "month": 4.840802675585285,
+      "week_of_year": 19.611204013377925,
+      "is_weekend": 0.2864548494983278,
+      "hour_sin": 0.0006350964977194788,
+      "hour_cos": -8.361204013383422e-05,
+      "dow_sin": -0.001991826572428338,
+      "dow_cos": -0.007893561472024942,
+      "month_sin": 0.3490696080112486,
+      "month_cos": -0.16498453346261696,
+      "lag_1": 176525.13046839464,
+      "lag_24": 176641.6928811037,
+      "lag_168": 176433.53422056857,
+      "rolling_mean_24": 176593.73015873742,
+      "rolling_std_24": 21518.927883150805,
+      "rolling_mean_168": 176519.3074906534,
+      "rolling_std_168": 23995.630845981577
+    },
+    "scale": {
+      "solar": 574.1591237419138,
+      "wind": 2033.1904480960789,
+      "hour": 6.921138831687042,
+      "day_of_week": 1.9924157941143972,
+      "day_of_month": 8.759355242478433,
+      "month": 2.387552872767512,
+      "week_of_year": 10.278570178038716,
+      "is_weekend": 0.45210448869395015,
+      "hour_sin": 0.7072975576193342,
+      "hour_cos": 0.7069156630371051,
+      "dow_sin": 0.7077432095211105,
+      "dow_cos": 0.7064228717212871,
+      "month_sin": 0.5592172988724428,
+      "month_cos": 0.7336256028266769,
+      "lag_1": 35939.32856700147,
+      "lag_24": 35931.796592068415,
+      "lag_168": 35684.65564584204,
+      "rolling_mean_24": 26812.427010990767,
+      "rolling_std_24": 11595.167848768064,
+      "rolling_mean_168": 24305.23323486378,
+      "rolling_std_168": 11013.145272157763
+    }
+  },
+  "adapter_info": {
+    "tabular": {
+      "train": {
+        "rows_before": 6148,
+        "rows_after": 5980,
+        "warmup_rows_dropped": 168
+      },
+      "val": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      },
+      "test": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      }
+    },
+    "sequence": {
+      "train": {
+        "rows_before": 6148,
+        "rows_after": 5980,
+        "warmup_rows_dropped": 168
+      },
+      "val": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      },
+      "test": {
+        "rows_before": 1318,
+        "rows_after": 1318,
+        "warmup_rows_dropped": 0
+      }
+    },
+    "tft": {
+      "rows_before": 8784,
+      "rows_after": 8616,
+      "warmup_rows_dropped": 168,
+      "tft_columns": [
+        "time_idx",
+        "group_id",
+        "electricity_demand",
+        "hour",
+        "day_of_week",
+        "solar_generation",
+        "wind_generation",
+        "lag_1",
+        "lag_24",
+        "lag_168",
+        "rolling_mean_24",
+        "rolling_std_24",
+        "rolling_mean_168",
+        "rolling_std_168"
+      ],
+      "n_groups": 1
+    }
+  },
+  "shapes": {
+    "X_train": [
+      5980,
+      21
+    ],
+    "X_val": [
+      1318,
+      21
+    ],
+    "X_test": [
+      1318,
+      21
+    ],
+    "X_seq_train": [
+      5980,
+      21
+    ],
+    "X_seq_val": [
+      1318,
+      21
+    ],
+    "X_seq_test": [
+      1318,
+      21
+    ],
+    "tft": [
+      8616,
+      14
+    ]
+  },
+  "leakage_checks": [
+    {
+      "check": "chronological_splits",
+      "passed": true,
+      "method": "TemporalSplit.split_frame"
+    },
+    {
+      "check": "lags_use_past_only",
+      "passed": true,
+      "method": "group-wise shift(lag)"
+    },
+    {
+      "check": "rolling_uses_shift1",
+      "passed": true,
+      "method": "shift(1) then rolling, per group"
+    },
+    {
+      "check": "transforms_fit_train_only",
+      "passed": true,
+      "method": "adapters expose fit_scaler for train-only fitting"
+    },
+    {
+      "check": "no_future_leakage_in_features",
+      "passed": true,
+      "method": "all features derived from past/timestamp only"
+    }
+  ],
+  "data_validation": {
+    "schema_report": {
+      "rows": 8784,
+      "n_groups": 1,
+      "groups": [
+        "single"
+      ],
+      "modal_frequencies": [
+        "0 days 01:00:00"
+      ],
+      "n_issues": 0,
+      "n_errors": 0,
+      "passed": true,
+      "issues": []
+    },
+    "cleaning_report": {
+      "rows_original": 8784,
+      "unparseable_timestamps_dropped": 0,
+      "duplicates_removed": 0,
+      "grid_frequency": "h",
+      "missing_before": {
+        "timestamp": 0,
+        "target": 0,
+        "group_id": 0,
+        "solar": 0,
+        "wind": 0
+      },
+      "gap_statistics": {
+        "n_gaps": 0,
+        "longest_gap_periods": 0,
+        "gap_periods_total": 0
+      },
+      "exogenous_interpolated_cells": 0,
+      "ffill_bfill_applied": false,
+      "target_interpolated_cells": 0,
+      "dropped_rows_target_na": 0,
+      "missing_after": {
+        "timestamp": 0,
+        "target": 0,
+        "group_id": 0,
+        "solar": 0,
+        "wind": 0
+      },
+      "rows_final": 8784
+    }
+  },
+  "cleaning": {
+    "rows_original": 8784,
+    "rows_final": 8784,
+    "duplicates_removed": 0,
+    "grid_frequency": "h",
+    "missing_after": {
+      "timestamp": 0,
+      "target": 0,
+      "group_id": 0,
+      "solar": 0,
+      "wind": 0
+    }
+  }
+}

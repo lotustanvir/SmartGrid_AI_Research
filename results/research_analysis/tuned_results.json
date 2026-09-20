@@ -1,0 +1,94 @@
+{
+  "Linear Regression": {
+    "val": {
+      "MAE": 5224.39,
+      "RMSE": 6500.45,
+      "MAPE": 2.8295,
+      "R2": 0.964469
+    },
+    "params": {
+      "method": "lag_1"
+    }
+  },
+  "Random Forest": {
+    "val": {
+      "MAE": 17772.8,
+      "RMSE": 22554.88,
+      "MAPE": 9.7127,
+      "R2": 0.572237
+    },
+    "params": {
+      "method": "rolling_mean_24"
+    }
+  },
+  "XGBoost": {
+    "val": {
+      "MAE": 9878.3,
+      "RMSE": 13254.82,
+      "MAPE": 5.2774,
+      "R2": 0.85227
+    },
+    "params": {
+      "method": "lag_24"
+    }
+  },
+  "LightGBM": {
+    "val": {
+      "MAE": 18269.8,
+      "RMSE": 25123.83,
+      "MAPE": 9.515,
+      "R2": 0.469246
+    },
+    "params": {
+      "method": "lag_168"
+    }
+  },
+  "LSTM": {
+    "val": {
+      "MAE": 10320.96,
+      "RMSE": 13685.91,
+      "MAPE": 5.4712,
+      "R2": 0.842504
+    },
+    "params": {
+      "hidden": 32,
+      "epochs": 50
+    }
+  },
+  "GRU": {
+    "val": {
+      "MAE": 10320.96,
+      "RMSE": 13685.91,
+      "MAPE": 5.4712,
+      "R2": 0.842504
+    },
+    "params": {
+      "hidden": 32,
+      "epochs": 50
+    }
+  },
+  "TFT": {
+    "val": {
+      "MAE": 10900.21,
+      "RMSE": 14272.45,
+      "MAPE": 5.7667,
+      "R2": 0.828715
+    },
+    "params": {
+      "hidden": 32,
+      "heads": 4
+    }
+  },
+  "Hybrid TFT-XGBoost": {
+    "val": {
+      "MAE": 11450.59,
+      "RMSE": 15458.64,
+      "MAPE": 6.0044,
+      "R2": 0.799061
+    },
+    "params": {
+      "tft_weight": 0.5,
+      "xgb_weight": 0.5
+    }
+  }
+}

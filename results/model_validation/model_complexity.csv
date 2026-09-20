@@ -1,0 +1,5 @@
+Model,Type,Parameters,Layers,Hidden_Dim,Input_Seq,Training_Time_s
+LSTM,Long Short-Term Memory Network,33537,2,64,168,1847
+GRU,Gated Recurrent Unit Network,25217,2,64,168,1654
+TFT,Temporal Fusion Transformer,142337,4,64,168,2456
+Hybrid TFT-XGBoost,Ensemble (TFT + XGBoost),143187,N/A,64,168,2890

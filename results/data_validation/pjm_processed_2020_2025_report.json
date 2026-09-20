@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "dataset": "PJM Smart Grid Research Dataset",
+    "version": "Phase 6B-B",
+    "created": "2026-09-16 22:57:03",
+    "years_covered": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "source": "PJM Interconnection (raw data)"
+  },
+  "preprocessing_decisions": {
+    "load_aggregation": "Summed MW across all load areas per timestamp",
+    "wind_filter": "Filtered to area == 'RTO' only",
+    "wind_negative_handling": "Clipped negative values to 0",
+    "solar_filter": "Filtered to area == 'RTO' only",
+    "solar_negative_handling": "Clipped negative values to 0",
+    "merge_strategy": "Inner join on timestamp",
+    "timestamp_format": "YYYY-MM-DD HH:MM:SS (UTC)"
+  },
+  "processing_statistics": {
+    "load": {
+      "total_rows": 1578240,
+      "areas_aggregated": 52608,
+      "zero_mw_rows": 15
+    },
+    "wind": {
+      "total_rows": 296448,
+      "rto_rows": 52608,
+      "negative_clipped": 5
+    },
+    "solar": {
+      "total_rows": 314280,
+      "rto_rows": 52608,
+      "negative_clipped": 24245
+    }
+  },
+  "dataset_statistics": {
+    "total_rows": 52608,
+    "columns": [
+      "timestamp",
+      "pjm_load_mw",
+      "wind_generation_mw",
+      "solar_generation_mw"
+    ],
+    "date_range": {
+      "start": "2020-01-01 05:00:00",
+      "end": "2026-01-01 04:00:00"
+    },
+    "missing_values": {
+      "load_mw": 0,
+      "wind_mw": 0,
+      "solar_mw": 0
+    },
+    "feature_statistics": {
+      "load": {
+        "count": 52608,
+        "min": 109873.658,
+        "max": 320308.858,
+        "mean": 179949.498,
+        "std": 32449.74
+      },
+      "wind": {
+        "count": 52608,
+        "min": 0.0,
+        "max": 10057.502,
+        "mean": 3382.752,
+        "std": 2325.783
+      },
+      "solar": {
+        "count": 52608,
+        "min": 0.0,
+        "max": 11905.724,
+        "mean": 1350.431,
+        "std": 2182.924
+      }
+    }
+  },
+  "validation_results": {
+    "expected_hourly_points": 52608,
+    "actual_unique_timestamps": 52608,
+    "missing_hours": 0,
+    "extra_hours": 0,
+    "duplicate_timestamps": 0,
+    "coverage_pct": 100.0,
+    "hourly_continuity": true,
+    "no_duplicates": true
+  },
+  "quality_scores": {
+    "continuity": 10,
+    "completeness": 10,
+    "consistency": 10,
+    "overall": 9.3
+  },
+  "ready_for_phase_6C": true
+}

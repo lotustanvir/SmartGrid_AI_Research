@@ -1,0 +1,200 @@
+{
+  "dataset": "PJM Smart Grid Features 2020-2025",
+  "version": "Phase 6C",
+  "created": "2026-09-16 23:04:58",
+  "total_rows": 52440,
+  "total_features": 32,
+  "features": {
+    "target": {
+      "name": "pjm_load_mw",
+      "type": "float",
+      "description": "Total PJM RTO load in MW (target variable)"
+    },
+    "temporal": [
+      {
+        "name": "hour",
+        "type": "int",
+        "description": "Hour of day (0-23)"
+      },
+      {
+        "name": "day_of_week",
+        "type": "int",
+        "description": "Day of week (0=Monday, 6=Sunday)"
+      },
+      {
+        "name": "day_of_month",
+        "type": "int",
+        "description": "Day of month (1-31)"
+      },
+      {
+        "name": "month",
+        "type": "int",
+        "description": "Month (1-12)"
+      },
+      {
+        "name": "quarter",
+        "type": "int",
+        "description": "Quarter (1-4)"
+      },
+      {
+        "name": "year",
+        "type": "int",
+        "description": "Year"
+      },
+      {
+        "name": "is_weekend",
+        "type": "int",
+        "description": "1 if weekend, 0 otherwise"
+      },
+      {
+        "name": "season",
+        "type": "string",
+        "description": "winter/spring/summer/autumn"
+      }
+    ],
+    "cyclical_encoding": [
+      {
+        "name": "hour_sin",
+        "type": "float",
+        "description": "sin(hour * 2pi/24)"
+      },
+      {
+        "name": "hour_cos",
+        "type": "float",
+        "description": "cos(hour * 2pi/24)"
+      },
+      {
+        "name": "day_sin",
+        "type": "float",
+        "description": "sin(day_of_week * 2pi/7)"
+      },
+      {
+        "name": "day_cos",
+        "type": "float",
+        "description": "cos(day_of_week * 2pi/7)"
+      },
+      {
+        "name": "month_sin",
+        "type": "float",
+        "description": "sin(month * 2pi/12)"
+      },
+      {
+        "name": "month_cos",
+        "type": "float",
+        "description": "cos(month * 2pi/12)"
+      }
+    ],
+    "lag_features": [
+      {
+        "name": "lag_1",
+        "type": "float",
+        "description": "Load at previous hour (t-1)"
+      },
+      {
+        "name": "lag_24",
+        "type": "float",
+        "description": "Load at same hour previous day (t-24)"
+      },
+      {
+        "name": "lag_168",
+        "type": "float",
+        "description": "Load at same hour previous week (t-168)"
+      }
+    ],
+    "rolling_features": [
+      {
+        "name": "rolling_mean_24",
+        "type": "float",
+        "description": "24-hour rolling mean of shifted load"
+      },
+      {
+        "name": "rolling_std_24",
+        "type": "float",
+        "description": "24-hour rolling std of shifted load"
+      },
+      {
+        "name": "rolling_mean_168",
+        "type": "float",
+        "description": "168-hour rolling mean of shifted load"
+      },
+      {
+        "name": "rolling_std_168",
+        "type": "float",
+        "description": "168-hour rolling std of shifted load"
+      }
+    ],
+    "renewable_features": [
+      {
+        "name": "wind_generation_mw",
+        "type": "float",
+        "description": "Wind generation at RTO level"
+      },
+      {
+        "name": "solar_generation_mw",
+        "type": "float",
+        "description": "Solar generation at RTO level"
+      },
+      {
+        "name": "total_renewable_mw",
+        "type": "float",
+        "description": "Wind + Solar generation"
+      },
+      {
+        "name": "renewable_ratio",
+        "type": "float",
+        "description": "Total renewable / Total load"
+      },
+      {
+        "name": "net_load",
+        "type": "float",
+        "description": "Load - Total renewable"
+      },
+      {
+        "name": "wind_share",
+        "type": "float",
+        "description": "Wind / Total renewable (0 if no renewable)"
+      },
+      {
+        "name": "solar_share",
+        "type": "float",
+        "description": "Solar / Total renewable (0 if no renewable)"
+      }
+    ],
+    "extreme_event_flags": [
+      {
+        "name": "high_demand_flag",
+        "type": "int",
+        "description": "1 if load >= 90th percentile"
+      },
+      {
+        "name": "low_renewable_flag",
+        "type": "int",
+        "description": "1 if renewable <= 10th percentile"
+      },
+      {
+        "name": "peak_hour_flag",
+        "type": "int",
+        "description": "1 if hour 17-21"
+      }
+    ]
+  },
+  "split_ratios": {
+    "train": "70%",
+    "validation": "15%",
+    "test": "15%"
+  },
+  "leakage_prevention": {
+    "lag_features": "Use shift(1) before computing lags",
+    "rolling_features": "Use shift(1) before computing rolling statistics",
+    "temporal_split": "No shuffle, chronological ordering",
+    "first_rows_removed": "168 rows removed (insufficient history)"
+  },
+  "model_datasets": {
+    "tabular": "pjm_tabular_features.csv",
+    "sequence": "pjm_sequences.csv",
+    "tft": "pjm_tft_features.csv",
+    "train": "train_features.csv",
+    "validation": "validation_features.csv",
+    "test": "test_features.csv"
+  }
+}

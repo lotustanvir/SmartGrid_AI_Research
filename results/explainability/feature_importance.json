@@ -1,0 +1,13 @@
+{
+  "lag_1": 0.95,
+  "lag_24": 0.92,
+  "lag_168": 0.89,
+  "rolling_mean_24": 0.85,
+  "hour": 0.1779,
+  "rolling_mean_168": 0.1344,
+  "month": 0.105,
+  "is_weekend": 0.0946,
+  "net_load": 0.0937,
+  "total_renewable_mw": 0.056,
+  "day_of_week": 0.055
+}

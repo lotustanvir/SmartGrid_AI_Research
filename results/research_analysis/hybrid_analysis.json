@@ -1,0 +1,28 @@
+{
+  "tft_only": {
+    "MAE": 10900.21,
+    "RMSE": 14272.45,
+    "MAPE": 5.7667,
+    "R2": 0.828715
+  },
+  "hybrid": {
+    "MAE": 10117.17,
+    "RMSE": 13481.57,
+    "MAPE": 5.3707,
+    "R2": 0.847172
+  },
+  "xgb_only": {
+    "MAE": 9878.3,
+    "RMSE": 13254.82,
+    "MAPE": 5.2774,
+    "R2": 0.85227
+  },
+  "residual_stats": {
+    "mean": 5681.74,
+    "std": 13092.77
+  },
+  "improvement": {
+    "tft_to_hybrid_rmse": 790.88,
+    "tft_to_hybrid_pct": 5.54
+  }
+}

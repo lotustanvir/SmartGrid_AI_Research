@@ -1,0 +1,43 @@
+{
+  "correlations": {
+    "load_wind": -0.1484,
+    "load_solar": 0.2613,
+    "load_renewable": 0.0749,
+    "load_net_load": 0.9957,
+    "load_lag1": 1.0,
+    "load_lag24": 1.0,
+    "load_lag168": 1.0
+  },
+  "feature_statistics": {
+    "load": {
+      "min": 109873.658,
+      "max": 320308.858,
+      "mean": 179965.69
+    },
+    "wind": {
+      "min": 0.0,
+      "max": 10057.502,
+      "mean": 3380.97
+    },
+    "solar": {
+      "min": 0.0,
+      "max": 11905.724,
+      "mean": 1354.11
+    },
+    "renewable": {
+      "min": 11.671,
+      "max": 19805.974,
+      "mean": 4735.08
+    },
+    "net_load": {
+      "min": 106634.843,
+      "max": 308183.484,
+      "mean": 175230.61
+    }
+  },
+  "extreme_event_stats": {
+    "high_demand_count": 5261,
+    "low_renewable_count": 5243,
+    "peak_hour_count": 10925
+  }
+}

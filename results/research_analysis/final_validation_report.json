@@ -1,0 +1,228 @@
+{
+  "model_ranking": [
+    {
+      "rank": 1,
+      "model": "Linear Regression",
+      "RMSE": 6500.45,
+      "R2": 0.964469
+    },
+    {
+      "rank": 2,
+      "model": "XGBoost",
+      "RMSE": 13254.82,
+      "R2": 0.85227
+    },
+    {
+      "rank": 3,
+      "model": "Hybrid TFT-XGBoost",
+      "RMSE": 13481.57,
+      "R2": 0.847172
+    },
+    {
+      "rank": 4,
+      "model": "LSTM",
+      "RMSE": 13685.91,
+      "R2": 0.842504
+    },
+    {
+      "rank": 5,
+      "model": "GRU",
+      "RMSE": 13685.91,
+      "R2": 0.842504
+    },
+    {
+      "rank": 6,
+      "model": "TFT",
+      "RMSE": 14272.45,
+      "R2": 0.828715
+    },
+    {
+      "rank": 7,
+      "model": "Random Forest",
+      "RMSE": 22554.88,
+      "R2": 0.572237
+    },
+    {
+      "rank": 8,
+      "model": "LightGBM",
+      "RMSE": 25123.83,
+      "R2": 0.469246
+    }
+  ],
+  "statistical_tests": {
+    "friedman": {
+      "chi2": 8033.3644,
+      "df": 7,
+      "sig": true,
+      "avg_ranks": {
+        "Linear Regression": 2.995423340961098,
+        "Random Forest": 5.722476481057717,
+        "XGBoost": 3.982456140350877,
+        "LightGBM": 5.506737859140605,
+        "LSTM": 3.88558352402746,
+        "GRU": 4.88558352402746,
+        "TFT": 5.0408085430968725,
+        "Hybrid TFT-XGBoost": 3.98093058733791
+      }
+    },
+    "wilcoxon": {
+      "Linear Regression vs Random Forest": {
+        "W": 6191831.92,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs XGBoost": {
+        "W": 11223769.9,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs LightGBM": {
+        "W": 6189166.77,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs LSTM": {
+        "W": 9814638.22,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs GRU": {
+        "W": 9814638.22,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs TFT": {
+        "W": 8657579.28,
+        "p": 0.0,
+        "sig": true
+      },
+      "Linear Regression vs Hybrid TFT-XGBoost": {
+        "W": 10291965.57,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs XGBoost": {
+        "W": 20570040.84,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs LightGBM": {
+        "W": 58870575.16,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs LSTM": {
+        "W": 20580505.21,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs GRU": {
+        "W": 20580505.21,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs TFT": {
+        "W": 21986735.13,
+        "p": 0.0,
+        "sig": true
+      },
+      "Random Forest vs Hybrid TFT-XGBoost": {
+        "W": 20247930.22,
+        "p": 0.0,
+        "sig": true
+      },
+      "XGBoost vs LightGBM": {
+        "W": 21421439.34,
+        "p": 0.0,
+        "sig": true
+      },
+      "XGBoost vs LSTM": {
+        "W": 11792887.35,
+        "p": 0.0,
+        "sig": true
+      },
+      "XGBoost vs GRU": {
+        "W": 11792887.35,
+        "p": 0.0,
+        "sig": true
+      },
+      "XGBoost vs TFT": {
+        "W": 15633580.33,
+        "p": 0.41799,
+        "sig": false
+      },
+      "XGBoost vs Hybrid TFT-XGBoost": {
+        "W": 9384566.7,
+        "p": 0.0,
+        "sig": true
+      },
+      "LightGBM vs LSTM": {
+        "W": 22930746.31,
+        "p": 0.0,
+        "sig": true
+      },
+      "LightGBM vs GRU": {
+        "W": 22930746.31,
+        "p": 0.0,
+        "sig": true
+      },
+      "LightGBM vs TFT": {
+        "W": 25058313.16,
+        "p": 0.0,
+        "sig": true
+      },
+      "LightGBM vs Hybrid TFT-XGBoost": {
+        "W": 22211884.57,
+        "p": 0.0,
+        "sig": true
+      },
+      "LSTM vs GRU": {
+        "W": 0,
+        "p": 1.0,
+        "sig": false
+      },
+      "LSTM vs TFT": {
+        "W": 4782854.02,
+        "p": 0.0,
+        "sig": true
+      },
+      "LSTM vs Hybrid TFT-XGBoost": {
+        "W": 2764226.14,
+        "p": 0.0,
+        "sig": true
+      },
+      "GRU vs TFT": {
+        "W": 4782854.02,
+        "p": 0.0,
+        "sig": true
+      },
+      "GRU vs Hybrid TFT-XGBoost": {
+        "W": 2764226.14,
+        "p": 0.0,
+        "sig": true
+      },
+      "TFT vs Hybrid TFT-XGBoost": {
+        "W": 7325775.04,
+        "p": 0.0,
+        "sig": true
+      }
+    }
+  },
+  "ablation": {
+    "temporal_contribution_mw": -6754.37,
+    "renewable_contribution_mw": -16054.43,
+    "full_contribution_mw": -8229.34
+  },
+  "hybrid": {
+    "tft_rmse": 14272.45,
+    "hybrid_rmse": 13481.57,
+    "improvement_mw": 790.88
+  },
+  "best_model": "Linear Regression",
+  "best_rmse": 6500.45,
+  "issues_fixed": [
+    "Statistical testing now uses all 8 models (df=7)",
+    "Ablation study redesigned with proper feature groups",
+    "Hybrid TFT-XGBoost investigated with residual analysis"
+  ]
+}

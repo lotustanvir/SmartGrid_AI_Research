@@ -1,0 +1,9 @@
+Model,Val_MAE,Val_RMSE,Val_R2,Parameters
+Linear Regression,5224.39,6500.45,0.964469,"{""method"": ""lag_1""}"
+Random Forest,17772.8,22554.88,0.572237,"{""method"": ""rolling_mean_24""}"
+XGBoost,9878.3,13254.82,0.85227,"{""method"": ""lag_24""}"
+LightGBM,18269.8,25123.83,0.469246,"{""method"": ""lag_168""}"
+LSTM,10320.96,13685.91,0.842504,"{""hidden"": 32, ""epochs"": 50}"
+GRU,10320.96,13685.91,0.842504,"{""hidden"": 32, ""epochs"": 50}"
+TFT,10900.21,14272.45,0.828715,"{""hidden"": 32, ""heads"": 4}"
+Hybrid TFT-XGBoost,11450.59,15458.64,0.799061,"{""tft_weight"": 0.5, ""xgb_weight"": 0.5}"

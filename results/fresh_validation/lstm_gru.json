@@ -1,0 +1,36 @@
+{
+  "lstm": {
+    "MAE": 11155.54,
+    "RMSE": 13279.53,
+    "sMAPE": 0.0644,
+    "R2": 0.621421,
+    "runtime": 11.0,
+    "pred_mean": 165152.87,
+    "pred_min": 123282.39,
+    "pred_max": 212527.55,
+    "n_epochs": 19,
+    "train_unique": 19,
+    "r2_identity_match": true,
+    "nan": false,
+    "inf": false,
+    "const": false,
+    "n_test": 1282
+  },
+  "gru": {
+    "MAE": 6651.2,
+    "RMSE": 8203.42,
+    "sMAPE": 0.037525,
+    "R2": 0.855529,
+    "runtime": 17.9,
+    "pred_mean": 170921.71,
+    "pred_min": 122551.17,
+    "pred_max": 219934.53,
+    "n_epochs": 18,
+    "train_unique": 18,
+    "r2_identity_match": true,
+    "nan": false,
+    "inf": false,
+    "const": false,
+    "n_test": 1282
+  }
+}

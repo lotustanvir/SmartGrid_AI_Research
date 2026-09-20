@@ -1,0 +1,126 @@
+# Baseline + deep-sequence hyperparameters (Phases 2A + 3A).
+# Keys must match the constructor arguments of each forecaster.
+# Baseline keys -> src/models/baseline/; lstm/gru keys -> src/models/deep/.
+
+linear_regression:
+  fit_intercept: true
+  regularization: null   # null | ridge | lasso
+  alpha: 1.0
+  random_state: 42
+
+random_forest:
+  n_estimators: 200
+  max_depth: null
+  min_samples_split: 2
+  min_samples_leaf: 1
+  max_features: null
+  n_jobs: -1
+  random_state: 42
+
+xgboost:
+  n_estimators: 500
+  learning_rate: 0.05
+  max_depth: 6
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_alpha: 0.0
+  reg_lambda: 1.0
+  n_jobs: -1
+  early_stopping_rounds: null
+  random_state: 42
+
+lightgbm:
+  n_estimators: 500
+  learning_rate: 0.05
+  num_leaves: 31
+  max_depth: -1
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_alpha: 0.0
+  reg_lambda: 0.0
+  n_jobs: -1
+  early_stopping_rounds: null
+  verbose: -1
+  random_state: 42
+
+lstm:
+  input_size: null
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.0
+  output_size: 1
+  seq_len: 24
+  batch_size: 64
+  epochs: 50
+  lr: 0.001
+  patience: 10
+  min_delta: 0.0
+  val_fraction: 0.15
+  scale: true
+  verbose: false
+  random_state: 42
+
+gru:
+  input_size: null
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.0
+  output_size: 1
+  seq_len: 24
+  batch_size: 64
+  epochs: 50
+  lr: 0.001
+  patience: 10
+  min_delta: 0.0
+  val_fraction: 0.15
+  scale: true
+  verbose: false
+  random_state: 42
+
+tft:
+  encoder_length: 24
+  prediction_length: 6
+  hidden_size: 32
+  attention_head_size: 2
+  hidden_continuous_size: 8
+  dropout: 0.1
+  learning_rate: 0.001
+  batch_size: 32
+  max_epochs: 20
+  patience: 5
+  gradient_clip_val: 0.1
+  quantiles: [0.05, 0.5, 0.95]
+  val_size: null
+  checkpoint_dir: null
+  verbose: false
+  random_state: 42
+
+hybrid_tft_xgb:
+  residual_training_mode: "oof"
+  n_oof_folds: 2
+  clip_to_bounds: false
+  tft_config:
+    encoder_length: 24
+    prediction_length: 6
+    hidden_size: 32
+    attention_head_size: 2
+    hidden_continuous_size: 8
+    dropout: 0.1
+    learning_rate: 0.001
+    batch_size: 32
+    max_epochs: 20
+    patience: 5
+    gradient_clip_val: 0.1
+    quantiles: [0.05, 0.5, 0.95]
+    verbose: false
+  xgb_config:
+    n_estimators: 200
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.0
+    reg_lambda: 1.0
+    n_jobs: -1
+    early_stopping_rounds: null
+  random_state: 42

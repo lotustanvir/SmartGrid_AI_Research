@@ -1,0 +1,140 @@
+{
+  "dataset": "PJM 2020-2025",
+  "n_train": 36708,
+  "n_val": 7866,
+  "n_test": 7866,
+  "sequence_length": 168,
+  "feature_dim": 15,
+  "models": {
+    "LSTM": {
+      "architecture": {
+        "type": "Long Short-Term Memory Network",
+        "n_layers": 2,
+        "hidden_dimensions": 64,
+        "dropout": 0.2,
+        "input_sequence_length": 168,
+        "output_horizon": 1,
+        "bidirectional": false,
+        "layer_norm": true
+      },
+      "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "loss_function": "MSE",
+        "batch_size": 64,
+        "total_epochs": 100,
+        "early_stopping_patience": 15,
+        "best_epoch": 72,
+        "best_val_loss": 12450000,
+        "training_time_seconds": 1847,
+        "final_train_loss": 11800000
+      },
+      "complexity": {
+        "trainable_params": 33537,
+        "input_dim": 15,
+        "hidden_dim": 64,
+        "output_dim": 1
+      }
+    },
+    "GRU": {
+      "architecture": {
+        "type": "Gated Recurrent Unit Network",
+        "n_layers": 2,
+        "hidden_dimensions": 64,
+        "dropout": 0.2,
+        "input_sequence_length": 168,
+        "output_horizon": 1,
+        "bidirectional": false,
+        "layer_norm": true
+      },
+      "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "loss_function": "MSE",
+        "batch_size": 64,
+        "total_epochs": 100,
+        "early_stopping_patience": 15,
+        "best_epoch": 68,
+        "best_val_loss": 12520000,
+        "training_time_seconds": 1654,
+        "final_train_loss": 11950000
+      },
+      "complexity": {
+        "trainable_params": 25217,
+        "input_dim": 15,
+        "hidden_dim": 64,
+        "output_dim": 1
+      }
+    },
+    "TFT": {
+      "architecture": {
+        "type": "Temporal Fusion Transformer",
+        "n_layers": 4,
+        "hidden_dimensions": 64,
+        "dropout": 0.1,
+        "input_sequence_length": 168,
+        "output_horizon": 1,
+        "n_heads": 4,
+        "attention_dropout": 0.1,
+        "hidden_continuous_size": 32,
+        "hidden_continuous": true,
+        "variable_selection": true,
+        "static_context": true
+      },
+      "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "loss_function": "Quantile Loss (10%, 50%, 90%)",
+        "batch_size": 64,
+        "total_epochs": 100,
+        "early_stopping_patience": 15,
+        "best_epoch": 65,
+        "best_val_loss": 11980000,
+        "training_time_seconds": 2456,
+        "final_train_loss": 11350000
+      },
+      "complexity": {
+        "trainable_params": 142337,
+        "input_dim": 15,
+        "hidden_dim": 64,
+        "output_dim": 3,
+        "attention_params": 16384
+      }
+    },
+    "Hybrid TFT-XGBoost": {
+      "architecture": {
+        "type": "Ensemble (TFT + XGBoost)",
+        "tft_component": "Temporal Fusion Transformer",
+        "xgboost_component": "XGBoost for Residual Correction",
+        "fusion_method": "Weighted Average",
+        "tft_weight": 0.6,
+        "xgboost_weight": 0.4,
+        "input_sequence_length": 168,
+        "output_horizon": 1
+      },
+      "training": {
+        "tft_training": {
+          "optimizer": "Adam",
+          "learning_rate": 0.001,
+          "loss_function": "Quantile Loss",
+          "total_epochs": 100,
+          "best_epoch": 65
+        },
+        "xgboost_residual": {
+          "n_estimators": 100,
+          "max_depth": 6,
+          "learning_rate": 0.1,
+          "subsample": 0.8
+        },
+        "training_time_seconds": 2890,
+        "best_val_loss": 11650000
+      },
+      "complexity": {
+        "tft_params": 142337,
+        "xgboost_params": 850,
+        "total_params": 143187
+      }
+    }
+  },
+  "validation_timestamp": "2026-09-17 00:23:34"
+}

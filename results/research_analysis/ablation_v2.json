@@ -1,0 +1,38 @@
+{
+  "A_Historical": {
+    "n_features": 5,
+    "val": {
+      "MAE": 5224.39,
+      "RMSE": 6500.45,
+      "MAPE": 2.8295,
+      "R2": 0.964469
+    }
+  },
+  "B_Historical_Temporal": {
+    "n_features": 9,
+    "val": {
+      "MAE": 9878.3,
+      "RMSE": 13254.82,
+      "MAPE": 5.2774,
+      "R2": 0.85227
+    }
+  },
+  "C_Historical_Renewable": {
+    "n_features": 9,
+    "val": {
+      "MAE": 17772.8,
+      "RMSE": 22554.88,
+      "MAPE": 9.7127,
+      "R2": 0.572237
+    }
+  },
+  "D_Full": {
+    "n_features": 13,
+    "val": {
+      "MAE": 11568.77,
+      "RMSE": 14729.79,
+      "MAPE": 6.3,
+      "R2": 0.817562
+    }
+  }
+}

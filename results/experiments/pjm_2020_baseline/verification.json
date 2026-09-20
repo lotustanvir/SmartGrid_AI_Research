@@ -1,0 +1,28 @@
+{
+  "no_test_leakage": true,
+  "no_scaler_refit": true,
+  "chronological_evaluation": true,
+  "models_completed": [
+    "LinearRegression",
+    "RandomForest",
+    "XGBoost",
+    "LightGBM",
+    "LSTM",
+    "GRU",
+    "TFT"
+  ],
+  "models_failed": [
+    "hybrid"
+  ],
+  "training_times_seconds": {
+    "LinearRegression": 0.014820337295532227,
+    "RandomForest": 1.0417134761810303,
+    "XGBoost": 0.7498905658721924,
+    "LightGBM": 0.7728848457336426,
+    "LSTM": 27.936993837356567,
+    "GRU": 48.95182228088379,
+    "TFT": 409.9
+  },
+  "total_models": 8,
+  "successful_models": 7
+}

@@ -1,0 +1,36 @@
+# Real-dataset mapping (Phase 6A). No real CSV is bundled yet: the
+# pipeline runs in "waiting" mode until dataset/raw/demand.csv exists.
+# Map provider columns here — never hardcode them in code.
+
+data:
+  path: "dataset/raw/demand.csv"
+
+  timestamp_col: "datetime"
+  target_col: "electricity_demand"
+
+  # Single-series dataset: null group column -> one "single" group.
+  group_col: null
+
+  expected_freq: "h"   # hourly; null = infer from data
+  allow_negative_target: false
+  max_target_gap: 3    # longer target gaps are dropped, never filled
+
+  weather:
+    temperature: "temperature"
+    humidity: null
+
+  renewable:
+    solar: "solar_generation"
+    wind: "wind_generation"
+
+cleaning:
+  exogenous_interp_method: "time"  # time | linear | none
+  exogenous_interp_limit: 6
+  allow_ffill_bfill: false
+  drop_target_na: true
+
+features:
+  calendar: true
+  cyclical: true
+  lags: [1, 24, 168]
+  rolling_windows: [24, 168]

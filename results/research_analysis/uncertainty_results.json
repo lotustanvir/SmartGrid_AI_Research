@@ -1,0 +1,13 @@
+{
+  "TFT": {
+    "PICP": 0.9001,
+    "PINAW": 0.2399,
+    "width": 43549.84
+  },
+  "Hybrid": {
+    "PICP": 0.9001,
+    "PINAW": 0.2886,
+    "width": 52390.87
+  },
+  "confidence_level": 0.9
+}

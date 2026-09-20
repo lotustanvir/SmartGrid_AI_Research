@@ -1,0 +1,17 @@
+# Research experiment protocol (Phase 5B).
+# Percentages are defaults only; override per experiment. Real-dataset
+# wiring happens only after approval — synthetic verification so far.
+
+experiment:
+  forecast_horizon: 24
+  encoder_length: 168
+  seed: 42
+
+splits:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+oof:
+  residual_training_mode: "oof"   # oof (research) | in_sample (debug only)
+  n_oof_folds: 2
