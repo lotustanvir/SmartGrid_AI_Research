@@ -54,3 +54,7 @@ lightning_logs/
 # Local model artifacts
 models/*.pkl
 models/*.joblib
+
+# Large processed sequence dataset
+dataset/processed/pjm_sequences.csv
+
