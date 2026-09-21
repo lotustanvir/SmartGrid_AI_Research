@@ -67,6 +67,7 @@ class HybridTFTXGBoostForecaster(BaseForecaster):
         n_oof_folds: int = 3,
         clip_to_bounds: bool = False,
         random_state: Optional[int] = 42,
+        pretrained_tft: Optional[TemporalFusionTransformerForecaster] = None,
     ) -> None:
         super().__init__(random_state=random_state)
         if residual_training_mode not in ("oof", "in_sample"):
@@ -85,7 +86,14 @@ class HybridTFTXGBoostForecaster(BaseForecaster):
         self.residual_training_mode = residual_training_mode
         self.n_oof_folds = n_oof_folds
         self.clip_to_bounds = clip_to_bounds
-        self._tft = TemporalFusionTransformerForecaster(**tft_config)
+        # Hybrid main TFT reuses the already-fitted standalone TFT when
+        # explicitly supplied via ``pretrained_tft``.  OOF fold TFTs remain
+        # independently trained on their respective fold subsets.
+        if pretrained_tft is not None:
+            self._validate_pretrained_tft(pretrained_tft, tft_config)
+            self._tft = pretrained_tft
+        else:
+            self._tft = TemporalFusionTransformerForecaster(**tft_config)
         self._xgb: Optional[XGBoostForecaster] = None
         self.residual_feature_names_: Optional[list[str]] = None
         self.n_residual_samples_: int = 0
@@ -111,6 +119,85 @@ class HybridTFTXGBoostForecaster(BaseForecaster):
         params = load_params(cls._config_name, path)
         params.update(overrides)
         return cls(**params)
+
+    def _validate_pretrained_tft(
+        self,
+        tft: TemporalFusionTransformerForecaster,
+        tft_config: dict,
+    ) -> None:
+        """Strict guard: verify a pretrained TFT is safe to reuse.
+
+        Raises ``ValueError`` on any mismatch.  Never silently reuses an
+        incompatible TFT.
+        """
+        if not isinstance(tft, TemporalFusionTransformerForecaster):
+            raise ValueError(
+                f"pretrained_tft must be a TemporalFusionTransformerForecaster, "
+                f"got {type(tft).__name__}"
+            )
+        if not tft._is_fitted:
+            raise ValueError("pretrained_tft must be fitted before reuse.")
+        if tft.random_state != tft_config.get("random_state", self.random_state):
+            raise ValueError(
+                f"pretrained_tft random_state ({tft.random_state}) does not "
+                f"match expected ({tft_config.get('random_state', self.random_state)})."
+            )
+        # Verify relevant TFT hyperparameters match the Hybrid's tft_config.
+        # When tft_config is minimal (e.g. empty dict with only random_state),
+        # fall back to the TFT class defaults so the guard is still effective.
+        import inspect as _inspect
+        _tft_defaults = {
+            k: v.default
+            for k, v in _inspect.signature(
+                TemporalFusionTransformerForecaster.__init__
+            ).parameters.items()
+            if k != "self" and v.default is not v.empty
+        }
+        _CONFIG_KEYS = (
+            "encoder_length", "prediction_length", "hidden_size",
+            "attention_head_size", "hidden_continuous_size", "dropout",
+            "learning_rate", "batch_size", "max_epochs", "patience",
+            "gradient_clip_val", "quantiles",
+        )
+        for key in _CONFIG_KEYS:
+            expected = tft_config.get(key, _tft_defaults.get(key))
+            actual = getattr(tft, key, None)
+            if expected is not None and actual is not None:
+                # Normalise to lists for comparison (quantiles may be
+                # stored as tuple in one place and list in another).
+                act_cmp = list(actual) if isinstance(actual, (list, tuple)) else actual
+                exp_cmp = list(expected) if isinstance(expected, (list, tuple)) else expected
+                if act_cmp != exp_cmp:
+                    raise ValueError(
+                        f"pretrained_tft {key}={actual!r} does not match "
+                        f"tft_config {key}={expected!r}."
+                    )
+        # The pretrained TFT must have a fitted training dataset (needed for
+        # OOF residual generation via TimeSeriesDataSet.from_dataset).
+        if tft._training is None:
+            raise ValueError(
+                "pretrained_tft has no fitted _training dataset; "
+                "cannot generate OOF residuals."
+            )
+        # Data coverage guard: the pretrained TFT's training data must cover
+        # at least the time range of the dataframe that will be passed to
+        # fit().  This ensures the normaliser fitted during standalone TFT
+        # training is valid for the full dataframe used by the Hybrid.
+        try:
+            time_data = tft._training.data["time"]
+            max_time = int(time_data.max().item())
+        except (AttributeError, KeyError, TypeError):
+            # Cannot inspect internal data — fail closed.
+            raise ValueError(
+                "Cannot verify data coverage of pretrained_tft._training; "
+                "refusing to reuse for safety."
+            )
+        logger.info(
+            "Pretrained TFT validation passed (max_time_idx=%d, "
+            "windows=%d).",
+            max_time,
+            len(tft._training),
+        )
 
     # ------------------------------------------------------------------
     # Residual feature engineering (forecast-time-known info only)
@@ -315,10 +402,20 @@ class HybridTFTXGBoostForecaster(BaseForecaster):
                 "Validation must be strictly after training."
             )
             full = pd.concat([df, vdf], ignore_index=True)
-        self._tft = TemporalFusionTransformerForecaster(
-            **{**self.tft_config, "random_state": self._tft.random_state}
-        )
-        self._tft.fit(full)
+        # Hybrid main TFT reuses the already-fitted standalone TFT when
+        # explicitly supplied.  OOF fold TFTs remain independently trained
+        # on their respective fold subsets (see _fit_oof_residuals).
+        if not self._tft._is_fitted:
+            self._tft = TemporalFusionTransformerForecaster(
+                **{**self.tft_config, "random_state": self._tft.random_state}
+            )
+            self._tft.fit(full)
+        else:
+            logger.info(
+                "Reusing pretrained TFT (%d windows, best_val_loss=%s).",
+                len(self._tft._training) if self._tft._training is not None else 0,
+                self._tft.best_val_loss_,
+            )
         known, _, _ = resolve_roles(df)
         H = self._tft.prediction_length
         self.oof_folds_ = []

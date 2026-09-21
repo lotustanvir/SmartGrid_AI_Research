@@ -1,5 +1,0 @@
-Experiment,N_Features,Val_MAE,Val_RMSE,Val_R2
-A_Historical_Load,5,5224.39,6500.45,0.964469
-B_Load_Temporal,9,5224.39,6500.45,0.964469
-C_Load_Renewable,7,5224.39,6500.45,0.964469
-D_Full_Features,11,5224.39,6500.45,0.964469

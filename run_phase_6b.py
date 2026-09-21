@@ -25,7 +25,7 @@ from src.utils.viz import plot_model_comparison, plot_prediction_vs_actual
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-OUTPUT_DIR = Path("results/experiments/pjm_2020_baseline")
+OUTPUT_DIR = Path("results/experiments/pjm_2020_baseline_post_fix")
 FIGURES_DIR = OUTPUT_DIR / "figures"
 PROCESSED_DIR = Path("dataset/processed")
 
@@ -107,15 +107,6 @@ def run_all_experiments():
     X_tr, y_tr, _, _ = tabular_ready(train_df, model_features)
     X_va, y_va, _, _ = tabular_ready(val_df, model_features)
     X_te, y_te, _, _ = tabular_ready(test_df, model_features)
-    X_all = np.vstack([X_tr, X_va, X_te])
-    y_all = np.concatenate([y_tr, y_va, y_te])
-
-    from src.models.deep.sequence import build_windows
-    X_tr_w, y_tr_w = build_windows(X_tr, y_tr, 24, 1)
-    X_va_w, y_va_w = build_windows(X_va, y_va, 24, 1)
-    X_te_w, y_te_w = build_windows(X_te, y_te, 24, 1)
-    X_seq_all = np.vstack([X_tr_w, X_va_w, X_te_w])
-    y_seq_all = np.concatenate([y_tr_w, y_va_w, y_te_w])
 
     # Build TFT DataFrames
     tft_train_df, tft_val_df, tft_test_df = build_tft_dataframes(train_df, val_df, test_df)
@@ -140,11 +131,16 @@ def run_all_experiments():
     failures = []
     fitted_models = {}
 
-    # --- Tree models via runner ---
+    # --- Tree models via runner (explicit splits, no re-split) ---
     for name in ["linear_regression", "random_forest", "xgboost", "lightgbm"]:
         try:
             t0 = time.time()
-            row, y_aligned, preds = runner.run_one(name, X_all, y_all)
+            row, y_aligned, preds = runner.run_one(
+                name,
+                X_tr=X_tr, y_tr=y_tr,
+                X_val=X_va, y_val=y_va,
+                X_te=X_te, y_te=y_te,
+            )
             results_rows.append(row)
             predictions[name] = (y_aligned, preds)
             training_times[name] = time.time() - t0
@@ -153,11 +149,16 @@ def run_all_experiments():
             logger.error("%s failed: %s", PRETTY_NAMES[name], e)
             failures.append(name)
 
-    # --- Sequence models via runner ---
+    # --- Sequence models via runner (explicit splits, no re-split) ---
     for name in ["lstm", "gru"]:
         try:
             t0 = time.time()
-            row, y_aligned, preds = runner.run_one(name, X_seq_all, y_seq_all)
+            row, y_aligned, preds = runner.run_one(
+                name,
+                X_tr=X_tr, y_tr=y_tr,
+                X_val=X_va, y_val=y_va,
+                X_te=X_te, y_te=y_te,
+            )
             results_rows.append(row)
             predictions[name] = (y_aligned, preds)
             training_times[name] = time.time() - t0
@@ -195,7 +196,10 @@ def run_all_experiments():
         from src.models.baseline import load_params
         from src.models.hybrid import HybridTFTXGBoostForecaster
         hyb_params = load_params("hybrid_tft_xgb")
-        hyb_model = HybridTFTXGBoostForecaster(**hyb_params)
+        # Pass the already-fitted standalone TFT to avoid redundant training.
+        hyb_model = HybridTFTXGBoostForecaster(
+            **hyb_params, pretrained_tft=tft_model
+        )
         fit_model(hyb_model, X_tft, None, None, None, use_validation=False)
         fitted_models["hybrid"] = hyb_model
         preds, actuals = hyb_model.forecast(tft_test_df)

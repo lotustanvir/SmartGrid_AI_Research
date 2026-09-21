@@ -1,5 +1,5 @@
 {
-  "rows_original": 8784,
+  "rows_original": 52608,
   "unparseable_timestamps_dropped": 0,
   "duplicates_removed": 0,
   "grid_frequency": "h",
@@ -26,5 +26,5 @@
     "solar": 0,
     "wind": 0
   },
-  "rows_final": 8784
+  "rows_final": 52608
 }

@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
 PROCESSED_DIR = Path("dataset/processed")
-OUTPUT_DIR = Path("results/fresh_validation_aligned")
+OUTPUT_DIR = Path("results/fresh_validation_aligned_post_fix")
 SEED = 42
 TIME_IDX = "time_idx"
 GROUP_ID = "group_id"
@@ -88,18 +88,11 @@ def integrity_check(model_name, y_true, y_pred, timestamps, train_rows, val_rows
 
 def run_lstm_gru(train_df, val_df, test_df, model_features):
     from src.data.adapters import tabular_ready
-    from src.models.deep.sequence import build_windows
     from src.training.experiment_runner import ExperimentRunner
 
     X_tr, y_tr, _, _ = tabular_ready(train_df, model_features)
     X_va, y_va, _, _ = tabular_ready(val_df, model_features)
     X_te, y_te, _, _ = tabular_ready(test_df, model_features)
-
-    X_tr_w, y_tr_w = build_windows(X_tr, y_tr, 24, 1)
-    X_va_w, y_va_w = build_windows(X_va, y_va, 24, 1)
-    X_te_w, y_te_w = build_windows(X_te, y_te, 24, 1)
-    X_seq_all = np.vstack([X_tr_w, X_va_w, X_te_w])
-    y_seq_all = np.concatenate([y_tr_w, y_va_w, y_te_w])
 
     runner = ExperimentRunner(
         output_dir=str(OUTPUT_DIR / "runner_tmp"),
@@ -111,7 +104,12 @@ def run_lstm_gru(train_df, val_df, test_df, model_features):
     predictions_arrays = {}
     for name in ["lstm", "gru"]:
         t0 = time.time()
-        row, y_aligned, preds = runner.run_one(name, X_seq_all, y_seq_all)
+        row, y_aligned, preds = runner.run_one(
+            name,
+            X_tr=X_tr, y_tr=y_tr,
+            X_val=X_va, y_val=y_va,
+            X_te=X_te, y_te=y_te,
+        )
         runtime = time.time() - t0
 
         r2_val = row["R2"]
@@ -130,8 +128,8 @@ def run_lstm_gru(train_df, val_df, test_df, model_features):
             "R2": r2_val, "runtime": round(runtime, 2), "n_test": n_pred,
             "r2_identity_match": abs(r2_val - r2_calc) < 1e-6,
             "nan": has_nan, "inf": has_inf, "const": is_const,
-            "train_rows": int(len(X_tr_w)), "val_rows": int(len(X_va_w)),
-            "test_rows": int(len(X_te_w)),
+            "train_rows": int(len(X_tr)), "val_rows": int(len(X_va)),
+            "test_rows": int(len(X_te)),
             "pred_mean": float(np.mean(preds)),
             "pred_min": float(np.min(preds)),
             "pred_max": float(np.max(preds)),

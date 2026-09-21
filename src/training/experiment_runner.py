@@ -104,12 +104,31 @@ class ExperimentRunner:
         return cls.from_config(**params)
 
     def run_one(
-        self, name: str, X, y, **overrides
+        self,
+        name: str,
+        X=None,
+        y=None,
+        *,
+        X_tr=None,
+        y_tr=None,
+        X_val=None,
+        y_val=None,
+        X_te=None,
+        y_te=None,
+        **overrides,
     ) -> tuple[dict, np.ndarray, np.ndarray]:
-        """Train one model; return (result_row, y_aligned, predictions)."""
-        X_tr, X_val, X_te, y_tr, y_val, y_te = chronological_split(
-            X, y, self.train_ratio, self.val_ratio
-        )
+        """Train one model; return (result_row, y_aligned, predictions).
+
+        If *X_tr* and *X_te* are supplied the caller's explicit splits are
+        used directly.  Otherwise a chronological split is performed on
+        *X*/*y* as before (backward-compatible default).
+        """
+        if X_tr is not None and X_te is not None:
+            pass  # explicit splits supplied by caller
+        else:
+            X_tr, X_val, X_te, y_tr, y_val, y_te = chronological_split(
+                X, y, self.train_ratio, self.val_ratio
+            )
         model = self.build_model(name, **overrides)
         fit_model(
             model, X_tr, y_tr, X_val, y_val, use_validation=self.use_validation

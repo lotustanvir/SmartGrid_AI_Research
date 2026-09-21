@@ -1,5 +1,5 @@
 data:
-  path: "dataset/processed/pjm_smart_grid_2020.csv"
+  path: "dataset/processed/pjm_smart_grid_2020_2025.csv"
   timestamp_col: "timestamp"
   target_col: "pjm_load_mw"
   group_col: null

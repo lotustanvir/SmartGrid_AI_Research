@@ -43,10 +43,6 @@ saved_models/*.pt
 saved_models/*.ckpt
 dataset/raw/*
 !dataset/raw/.gitkeep
-
-# Large dataset (keep locally for Colab/research, too big for GitHub)
-dataset/processed/pjm_sequences.csv
-
 # Training logs / experiment artifacts
 lightning_logs/
 
