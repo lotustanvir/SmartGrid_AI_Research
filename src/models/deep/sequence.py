@@ -122,7 +122,7 @@ class SequenceForecasterBase(BaseForecaster):
         num_layers: int = 1,
         dropout: float = 0.0,
         output_size: int = 1,
-        seq_len: int = 24,
+        seq_len: int = 168,
         batch_size: int = 64,
         epochs: int = 50,
         lr: float = 1e-3,
@@ -274,8 +274,6 @@ class SequenceForecasterBase(BaseForecaster):
                 f"input_size={self.input_size} but data has {n_feat} features."
             )
         self.input_size_ = n_feat
-        if self.scale:
-            Xw = self._scale_fit(Xw)
 
         if X_val is not None or y_val is not None:
             if X_val is None or y_val is None:
@@ -283,8 +281,6 @@ class SequenceForecasterBase(BaseForecaster):
             Xvw, yvw = self._to_windows(X_val, y_val)
             if Xvw.shape[2] != n_feat:
                 raise ValueError("Train/validation feature mismatch.")
-            if self.scale:
-                Xvw = self._scale_apply(Xvw)
             Xtr, ytr = Xw, yw
         else:
             n_val = max(1, int(len(Xw) * self.val_fraction))
@@ -292,6 +288,13 @@ class SequenceForecasterBase(BaseForecaster):
                 raise ValueError("Not enough windows for train/val split.")
             Xtr, ytr = Xw[:-n_val], yw[:-n_val]  # chronological tail = val
             Xvw, yvw = Xw[-n_val:], yw[-n_val:]
+
+        # Fit the feature scaler on TRAIN windows only. Fitting before the
+        # split would leak validation-set statistics (mean/var) into the
+        # training transform and bias early stopping / val metrics.
+        if self.scale:
+            Xtr = self._scale_fit(Xtr)
+            Xvw = self._scale_apply(Xvw)
 
         ytr_scaled = self._target_scale_fit(ytr)
         yvw_scaled = self._target_scale_apply(yvw)

@@ -78,13 +78,13 @@ class TestTFTModel(unittest.TestCase):
 
     def test_init_defaults(self):
         m = TemporalFusionTransformerForecaster()
-        self.assertEqual((m.encoder_length, m.prediction_length), (24, 6))
+        self.assertEqual((m.encoder_length, m.prediction_length), (168, 6))  # Q1 168
         self.assertEqual(m.quantiles, (0.05, 0.5, 0.95))
         self.assertFalse(m._is_fitted)
 
     def test_from_config(self):
         m = TemporalFusionTransformerForecaster.from_config()
-        self.assertEqual((m.encoder_length, m.prediction_length), (24, 6))
+        self.assertEqual((m.encoder_length, m.prediction_length), (168, 6))  # Q1 yaml
 
     def test_bad_config_rejected(self):
         with self.assertRaises(ValueError):

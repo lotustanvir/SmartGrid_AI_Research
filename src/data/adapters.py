@@ -24,6 +24,10 @@ from src.data.schema import (
 logger = logging.getLogger(__name__)
 
 TFT_TARGET = "electricity_demand"
+# LEGACY map (Phase 6A): retained for backward compatibility of stored
+# artifacts only. Q1 MUST NOT treat weather as decoder-known; the
+# canonical role resolver is calendar-only (see tft_ready below and
+# src/q1/tft_path.py).
 TFT_KNOWN_MAP = {
     "hour": "hour",
     "day_of_week": "day_of_week",
@@ -31,6 +35,10 @@ TFT_KNOWN_MAP = {
     "solar": "solar_generation",
     "wind": "wind_generation",
 }
+
+# Q1 canonical TFT knowns: calendar/time ONLY. Any weather column listed
+# here would leak future information into the decoder and is rejected.
+Q1_TFT_KNOWN_CALENDAR = ("hour", "day_of_week")
 
 
 def _drop_feature_na(
@@ -74,13 +82,44 @@ def sequenced_ready(
 def tft_ready(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     """Long TFT frame: time_idx/group_id/target + known/unknown reals.
 
-    Lags/rolling are unknown-at-forecast-time reals; calendar + weather
-    are known. Warm-up NaN rows are dropped and reported.
+    Q1 SAFETY (Phase 2.1): knowns are calendar/time ONLY
+    (``hour``/``day_of_week``/``time_idx``). Weather columns
+    (``temperature``/``solar``/``wind`` and any lag/rolling/weather-lag
+    numeric) are encoder-only unknowns — they are NEVER returned as
+    decoder-known future information. Role assignment delegates to the
+    canonical resolver ``src.models.tft.dataset.resolve_roles``; any
+    violation raises fail-closed. For the canonical Q1 construction use
+    ``src/q1/tft_path.build_q1_tft_frame`` instead.
     """
-    known = [c for c in ("hour", "day_of_week", "temperature", "solar", "wind")
-             if c in df.columns]
+    from src.models.tft.dataset import resolve_roles
+
+    # Quarantine: refuse frames that already carry contemporaneous raw
+    # weather as if it were forecast-known. Lagged/rolling numerics pass
+    # through as unknowns below.
+    _raw_weather = {
+        "temperature",
+        "solar",
+        "wind",
+        "solar_generation",
+        "wind_generation",
+    }
+    _legacy_known_request = [c for c in ("temperature", "solar", "wind") if c in df.columns]
+    known = [c for c in Q1_TFT_KNOWN_CALENDAR if c in df.columns]
     unknown = [c for c in df.columns
                if c.startswith("lag_") or c.startswith("rolling_")]
+    # Weather (raw or lagged) is encoder-only: never a known.
+    for c in list(df.columns):
+        if c in _raw_weather or c.startswith(
+            ("temp_", "hum_", "ws_", "cloud", "solrad", "wind_", "solar_", "totren")
+        ) or c in ("cdh", "hdh") or c.endswith(("_lag_1", "_lag_24", "_lag_168")):
+            if c not in unknown and c not in known:
+                unknown.append(c)
+    if _legacy_known_request:
+        logger.warning(
+            "tft_ready: legacy weather-as-known request %s quarantined to "
+            "encoder-only unknowns; use src/q1/tft_path for Q1.",
+            _legacy_known_request,
+        )
     need = known + unknown + [CANONICAL_TARGET]
     clean_df, info = _drop_feature_na(df, [c for c in need if c != CANONICAL_TARGET])
     frames = []
@@ -100,7 +139,22 @@ def tft_ready(df: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
             raise ValueError("NaN remains in TFT adapter output.")
         frames.append(f)
     out = pd.concat(frames, ignore_index=True)
+    # Delegate final role validation to the canonical resolver: knowns
+    # must be calendar-only; weather must be unknown (encoder-only).
+    resolved_known, resolved_unknown, _ = resolve_roles(out)
+    _forbidden_known = [
+        c for c in resolved_known
+        if c not in ("time_idx", "hour", "day_of_week", "dow", "dom",
+                     "month", "woy", "weekend")
+    ]
+    if _forbidden_known:
+        raise ValueError(
+            f"tft_ready produced non-calendar knowns {_forbidden_known}; "
+            "use src/q1/tft_path.build_q1_tft_frame for Q1."
+        )
     info["tft_columns"] = list(out.columns)
+    info["tft_known"] = list(resolved_known)
+    info["tft_unknown"] = list(resolved_unknown)
     info["n_groups"] = int(clean_df[CANONICAL_GROUP].nunique())
     logger.info("TFT frame: %s", out.shape)
     return out, info

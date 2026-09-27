@@ -32,6 +32,11 @@ MODEL_NAMES = (
     "gru",
     "tft",
     "hybrid_tft_xgb",
+    "persistence",
+    "seasonal_persistence",
+    "sarima",
+    "patchtst",
+    "nbeats",
 )
 
 

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Trustworthy Short-Term Electricity Load Forecasting using PJM 2020-2025 Data"
+message: "PLACEHOLDER — Phase 1 preparation only. Update authors, version, and DOI on artifact freeze (Phase 8)."
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+repository-code: "TODO"
+license: "TODO"

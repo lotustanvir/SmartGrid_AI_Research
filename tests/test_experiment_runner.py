@@ -26,6 +26,9 @@ SMALL_OVERRIDES = {
     "lightgbm": {"n_estimators": 20},
     "lstm": {"hidden_size": 8, "epochs": 2, "seq_len": 12},
     "gru": {"hidden_size": 8, "epochs": 2, "seq_len": 12},
+    "patchtst": {"hidden_size": 8, "epochs": 2, "seq_len": 12, "patch_len": 4, "stride": 2},
+    "nbeats": {"hidden_size": 8, "epochs": 2, "seq_len": 12, "n_blocks": 1},
+    "sarima": {"max_train": 300},
     "tft": {
         "encoder_length": 12,
         "prediction_length": 3,
@@ -107,14 +110,21 @@ class TestExperimentRunner(unittest.TestCase):
         self.assertEqual(
             set(MODEL_REGISTRY),
             {
-                "linear_regression",
-                "random_forest",
+                # Q1 headline 11:
+                "persistence",
+                "seasonal_persistence",
+                "sarima",
                 "xgboost",
                 "lightgbm",
                 "lstm",
                 "gru",
                 "tft",
+                "patchtst",
+                "nbeats",
                 "hybrid",
+                # Legacy (not Q1 headline):
+                "linear_regression",
+                "random_forest",
             },
         )
 
@@ -126,7 +136,7 @@ class TestExperimentRunner(unittest.TestCase):
             runner = ExperimentRunner(output_dir=d)
             results = runner.run_all(X, y, model_overrides=SMALL_OVERRIDES)
         self.assertEqual(list(results.columns), ["Model", "MAE", "RMSE", "MAPE", "sMAPE", "R2"])
-        self.assertEqual(len(results), 8)
+        self.assertEqual(len(results), 13)
         for col in ["MAE", "RMSE", "MAPE", "sMAPE", "R2"]:
             self.assertTrue(np.all(np.isfinite(results[col].to_numpy())), col)
 

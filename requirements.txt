@@ -13,3 +13,8 @@ matplotlib==3.11.2
 seaborn==0.13.2
 PyYAML==6.0.3
 pytest==9.1.1
+# Weather pipeline (Phase 1D-C3; required by scripts/download_era5*.py and
+# scripts/process_era5.py; pins verified 2026-09-26).
+cdsapi==0.7.7
+xarray==2026.7.0
+netCDF4==1.7.4

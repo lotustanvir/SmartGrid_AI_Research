@@ -1,8 +1,13 @@
 """Phase 6B-A: First real experiment run on PJM 2020 dataset.
 
-Runs all 8 models using the existing ExperimentRunner framework.
-Generates results.csv, plots, quantile intervals, and attention interpretation.
-No model tuning. No publication claims.
+.. warning:: RETIRED FOR Q1 (Phase 2).
+
+    This runner is NOT the Q1 execution path. It fits TFT/Hybrid on a
+    frame containing TEST data (see run_all_experiments X_tft block) and
+    uses the legacy V1 8-model set with ratio splits. Use
+    ``run_q1_protocol.py`` (canonical Q1 runner, SMOKE only in Phase 2).
+    Calling :func:`run_all_experiments` without
+    ``allow_legacy_unsafe=True`` raises fail-closed.
 """
 
 from __future__ import annotations
@@ -95,7 +100,14 @@ def generate_residual_plots(y_true, y_pred, model_name, figures_dir):
     fig.savefig(path, dpi=120); plt.close(fig)
 
 
-def run_all_experiments():
+def run_all_experiments(allow_legacy_unsafe: bool = False):
+    if not allow_legacy_unsafe:
+        raise RuntimeError(
+            "run_phase_6b is RETIRED for Q1: its TFT/Hybrid path fits on "
+            "test-inclusive X_tft and is not protocol-compliant. Use "
+            "run_q1_protocol.py. Pass allow_legacy_unsafe=True only for "
+            "archaeology, never for Q1 results."
+        )
     logger.info("=== Phase 6B-A: PJM 2020 Experiment ===")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
@@ -308,4 +320,6 @@ def run_all_experiments():
 
 
 if __name__ == "__main__":
-    run_all_experiments()
+    raise SystemExit(
+        "run_phase_6b is RETIRED for Q1. Use run_q1_protocol.py (SMOKE only)."
+    )

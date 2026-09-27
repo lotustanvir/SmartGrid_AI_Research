@@ -108,7 +108,11 @@ class LightGBMForecaster(BaseForecaster):
         """
         X, y = self._validate_xy(X, y)
 
-        eval_X = eval_y = None
+        # Canonical sklearn API: a single chronological validation block as
+        # eval_set. (The eval_X/eval_y alias only exists on recent LightGBM
+        # and breaks the validation path elsewhere; eval_set works on all
+        # versions and matches the XGBoost wrapper convention.)
+        eval_set = None
         if X_val is not None or y_val is not None:
             if X_val is None or y_val is None:
                 raise ValueError("X_val and y_val must be provided together.")
@@ -118,9 +122,9 @@ class LightGBMForecaster(BaseForecaster):
                     f"Feature mismatch: train has {X.shape[1]}, "
                     f"validation has {Xv.shape[1]}"
                 )
-            eval_X, eval_y = Xv, yv
+            eval_set = [(Xv, yv)]
 
-        if self.early_stopping_rounds is not None and eval_X is None:
+        if self.early_stopping_rounds is not None and eval_set is None:
             raise ValueError(
                 "early_stopping_rounds requires validation data "
                 "(X_val and y_val)."
@@ -146,9 +150,8 @@ class LightGBMForecaster(BaseForecaster):
             random_state=self.random_state,
         )
         fit_kwargs: dict = {}
-        if eval_X is not None:
-            fit_kwargs["eval_X"] = eval_X
-            fit_kwargs["eval_y"] = eval_y
+        if eval_set is not None:
+            fit_kwargs["eval_set"] = eval_set
         if callbacks is not None:
             fit_kwargs["callbacks"] = callbacks
         self.model.fit(X, y, **fit_kwargs)

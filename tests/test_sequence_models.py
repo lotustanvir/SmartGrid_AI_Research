@@ -37,14 +37,14 @@ class SequenceMixin:
 
     def test_init_defaults(self):
         m = self.model_cls()
-        self.assertEqual((m.hidden_size, m.seq_len, m.output_size), (64, 24, 1))
+        self.assertEqual((m.hidden_size, m.seq_len, m.output_size), (64, 168, 1))  # Q1 168
         self.assertEqual(m.random_state, 42)
         self.assertFalse(m._is_fitted)
         self.assertIn(str(m.device), ("cpu", "cuda"))
 
     def test_from_config(self):
         m = self.model_cls.from_config()
-        self.assertEqual((m.hidden_size, m.seq_len), (64, 24))
+        self.assertEqual((m.hidden_size, m.seq_len), (64, 168))  # Q1 yaml
 
     def test_forward_pass(self):
         m = self._make()

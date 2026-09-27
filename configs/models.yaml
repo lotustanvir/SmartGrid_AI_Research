@@ -1,6 +1,28 @@
-# Baseline + deep-sequence hyperparameters (Phases 2A + 3A).
+# Baseline + deep-sequence hyperparameters (Phase 2 Q1).
 # Keys must match the constructor arguments of each forecaster.
-# Baseline keys -> src/models/baseline/; lstm/gru keys -> src/models/deep/.
+# Baseline keys -> src/models/baseline/; lstm/gru keys -> src/models/deep/;
+# statistical keys -> src/models/statistical/; advanced -> src/models/advanced/.
+# Q1 canonical: history 168, horizons {1,6,24}, seeds {42,123,2025}, OOF 5.
+
+persistence:
+  horizon: 1
+  random_state: null
+
+seasonal_persistence:
+  seasonal_period: 168
+  horizon: 1
+  random_state: null
+
+sarima:
+  # Q1 SARIMA-lite (Phase 2.1): transparent NumPy least-squares approximation,
+  # NOT conventional SARIMA (statsmodels absent). Seasonal period locked 168
+  # (weekly) per src/q1/protocol.py:SEASONAL_PERIOD. Do NOT revert to 24.
+  order: [1, 1, 1]
+  seasonal_order: [1, 1, 1, 168]
+  seasonal_period: 168
+  horizon: 1
+  max_train: 4000
+  random_state: null
 
 linear_regression:
   fit_intercept: true
@@ -49,7 +71,7 @@ lstm:
   num_layers: 1
   dropout: 0.0
   output_size: 1
-  seq_len: 24
+  seq_len: 168
   batch_size: 64
   epochs: 50
   lr: 0.001
@@ -66,7 +88,7 @@ gru:
   num_layers: 1
   dropout: 0.0
   output_size: 1
-  seq_len: 24
+  seq_len: 168
   batch_size: 64
   epochs: 50
   lr: 0.001
@@ -77,8 +99,41 @@ gru:
   verbose: false
   random_state: 42
 
+patchtst:
+  seq_len: 168
+  output_size: 1
+  patch_len: 16
+  stride: 8
+  d_model: 64
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.1
+  batch_size: 64
+  epochs: 50
+  lr: 0.001
+  patience: 10
+  val_fraction: 0.15
+  scale: true
+  verbose: false
+  random_state: 42
+
+nbeats:
+  seq_len: 168
+  output_size: 1
+  hidden_size: 128
+  n_blocks: 3
+  n_layers: 2
+  batch_size: 64
+  epochs: 50
+  lr: 0.001
+  patience: 10
+  val_fraction: 0.15
+  scale: true
+  verbose: false
+  random_state: 42
+
 tft:
-  encoder_length: 24
+  encoder_length: 168
   prediction_length: 6
   hidden_size: 32
   attention_head_size: 2
@@ -97,10 +152,10 @@ tft:
 
 hybrid_tft_xgb:
   residual_training_mode: "oof"
-  n_oof_folds: 2
+  n_oof_folds: 5
   clip_to_bounds: false
   tft_config:
-    encoder_length: 24
+    encoder_length: 168
     prediction_length: 6
     hidden_size: 32
     attention_head_size: 2

@@ -37,13 +37,15 @@ class TestHybrid(unittest.TestCase):
 
     def test_init_defaults(self):
         m = HybridTFTXGBoostForecaster()
-        self.assertEqual(m._tft.encoder_length, 24)
+        self.assertEqual(m._tft.encoder_length, 168)  # Q1 168
         self.assertEqual(m.tft_config, {"random_state": 42})
+        self.assertEqual(m.n_oof_folds, 5)  # Q1 Phase 2 default
         self.assertFalse(m._is_fitted)
 
     def test_from_config(self):
         m = HybridTFTXGBoostForecaster.from_config()
-        self.assertEqual(m.tft_config["encoder_length"], 24)
+        self.assertEqual(m.tft_config["encoder_length"], 168)  # Q1 yaml
+        self.assertEqual(m.n_oof_folds, 5)  # Q1 yaml
         self.assertIn("n_estimators", m.xgb_config)
 
     def test_fit_pipeline(self):

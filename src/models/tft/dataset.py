@@ -14,10 +14,25 @@ TIME_IDX = "time_idx"
 GROUP_ID = "group_id"
 TARGET = "electricity_demand"
 
+# Only calendar covariates are genuinely known into the future. Weather
+# (temperature/solar/wind, including Q1 lagged weather) is observed, not
+# known: feeding its true future values to the TFT decoder would leak
+# future information and inflate accuracy versus history-only models.
+# Weather stays an input, but as an encoder-only (unknown) real.
+# Q1 canonical aliases (dow/dom/month/woy/weekend, temp_lag_*, etc.) are
+# accepted: calendar aliases are known, all lag/rolling/weather-lag cols
+# fall through to unknown via the fallback branch.
 RICH_KNOWN_REALS = [
     "time_idx",
     "hour",
     "day_of_week",
+    "dow",
+    "dom",
+    "month",
+    "woy",
+    "weekend",
+]
+RICH_WEATHER_REALS = [
     "temperature",
     "solar_generation",
     "wind_generation",
@@ -142,10 +157,37 @@ def validate_frame(df: pd.DataFrame, allow_nan_target: bool = False) -> pd.DataF
 
 
 def resolve_roles(df: pd.DataFrame) -> tuple[list[str], list[str], list[str]]:
-    """Map frame columns to (known_reals, unknown_reals, static_cats)."""
-    if all(c in df.columns for c in RICH_KNOWN_REALS):
+    """Map frame columns to (known_reals, unknown_reals, static_cats).
+
+    Q1 rule: knowns are calendar/time ONLY (never weather/lags/rolling).
+    Core trigger is (time_idx, hour, day_of_week-or-dow); when present,
+    knowns = all calendar aliases present, unknowns = target + weather +
+    every lag/rolling/weather-lag numeric. Otherwise the generic fallback
+    (same rule) applies.
+    """
+    _CORE = ("time_idx", "hour")
+    _DOW = ("day_of_week", "dow")
+    has_core = all(c in df.columns for c in _CORE) and any(
+        c in df.columns for c in _DOW
+    )
+    if has_core:
         known = [c for c in RICH_KNOWN_REALS if c in df.columns]
-        unknown = [c for c in RICH_UNKNOWN_REALS if c in df.columns]
+        # All lag/rolling/weather-lag numerics are encoder-only unknowns.
+        extra_unknown = [
+            c
+            for c in df.columns
+            if (
+                c.startswith(("lag_", "rolling_", "temp_", "hum_", "ws_"))
+                or c.startswith(("cloud", "solrad", "wind_", "solar_", "totren"))
+                or c in ("cdh", "hdh", "cdh_lag_1", "hdh_lag_1")
+                or c.endswith(("_lag_1", "_lag_24", "_lag_168"))
+            )
+            and pd.api.types.is_numeric_dtype(df[c])
+        ]
+        unknown = [c for c in RICH_UNKNOWN_REALS + RICH_WEATHER_REALS if c in df.columns]
+        for c in extra_unknown:
+            if c not in unknown:
+                unknown.append(c)
         static = [c for c in RICH_STATIC_CATS if c in df.columns]
     else:
         known = [c for c in (TIME_IDX, "hour", "day_of_week") if c in df.columns]

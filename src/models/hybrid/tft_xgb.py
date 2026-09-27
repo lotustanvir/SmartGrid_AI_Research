@@ -64,7 +64,7 @@ class HybridTFTXGBoostForecaster(BaseForecaster):
         tft_config: Optional[dict] = None,
         xgb_config: Optional[dict] = None,
         residual_training_mode: str = "oof",
-        n_oof_folds: int = 3,
+        n_oof_folds: int = 5,
         clip_to_bounds: bool = False,
         random_state: Optional[int] = 42,
         pretrained_tft: Optional[TemporalFusionTransformerForecaster] = None,

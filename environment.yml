@@ -1,0 +1,10 @@
+# PLACEHOLDER — Phase 1 preparation only. Pinned env to be locked in Phase 5.
+# Python 3.11. See requirements.txt (current, loose) until lock.
+name: smartgrid-ai-research
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - -r requirements.txt

@@ -61,7 +61,7 @@ class TemporalFusionTransformerForecaster(BaseForecaster):
 
     def __init__(
         self,
-        encoder_length: int = 24,
+        encoder_length: int = 168,
         prediction_length: int = 6,
         hidden_size: int = 32,
         attention_head_size: int = 2,
