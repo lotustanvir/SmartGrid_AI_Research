@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-09-26T13:48:32Z",
+  "boundary": "data/raw/external/pjm_boundary.geojson",
+  "boundary_sha256": "a4f288bca04f8d5f259b09997953ca58d90dc51dc2828e61a1b0404de5dadb88",
+  "era5_grid": {
+    "n_lat": 61,
+    "n_lon": 75
+  },
+  "n_cells_total": 4575,
+  "n_cells_in": 1340,
+  "weight_method_primary": "boundary-masked simple mean (Method A)",
+  "weight_method_B_status": "BLOCKED: population product not acquired (configs/pjm_weather_weights.yaml TODO); w_pop=NaN; code path ready",
+  "mean_lat": 38.36996268656716,
+  "mean_lon": -83.39179104477611
+}

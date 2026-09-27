@@ -1,0 +1,46 @@
+{
+  "dataset": "reanalysis-era5-single-levels",
+  "product_type": "reanalysis",
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_cloud_cover"
+  ],
+  "stored_variables": {
+    "t2m": "float32",
+    "d2m": "float32",
+    "u10": "float32",
+    "v10": "float32",
+    "tcc": "float32"
+  },
+  "year": "2020",
+  "month": "03",
+  "bbox_requested": {
+    "north": 48.5,
+    "west": -92.0,
+    "south": 33.5,
+    "east": -73.5
+  },
+  "bbox_actual": {
+    "lat_max": 48.5,
+    "lat_min": 33.5,
+    "lon_min": -92.0,
+    "lon_max": -73.5
+  },
+  "time_dim": "valid_time",
+  "time_coverage": {
+    "start": "2020-03-01T00:00:00.000000000",
+    "end": "2020-03-31T23:00:00.000000000",
+    "n_steps": 744,
+    "step_seconds": [
+      3600
+    ]
+  },
+  "file": "era5_pjm_2020_03.nc",
+  "file_size_bytes": 30475814,
+  "acquisition_date": "2026-09-24T20:48:08Z",
+  "request_archive": "request_2020_03.json",
+  "cds_request_id": "6e8b810b-ee9d-4af1-bbf7-cbc493eedfac"
+}

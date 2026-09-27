@@ -1,0 +1,3183 @@
+{
+  "generated_utc": "2026-09-26T13:34:58Z",
+  "scope": "final holdings 2020-01..2025-12 (72 full + 72 ssrd)",
+  "n_files_expected": 144,
+  "n_pass": 144,
+  "n_fail": 0,
+  "failures": [],
+  "month_chain_continuous": true,
+  "chain_breaks": [],
+  "sidecars_missing": [],
+  "manifest": "data/raw/weather/era5/monthly/sha256_era5_2020_2025.txt",
+  "gate": "pass",
+  "files": [
+    {
+      "file": "era5_pjm_2020_01.nc",
+      "bytes": 30167574,
+      "sha256": "c55268d63e92c2b11ef9cfedc16a89d58f137ce05691714a063601e51460709e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-01-01 00:00:00",
+      "t_end": "2020-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_01_ssrd.nc",
+      "bytes": 2693869,
+      "sha256": "8c766a46a38cbc7bec507b26354bc11fe44c1a10490a5a2eddf343f3d576b3a5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-01-01 00:00:00",
+      "t_end": "2020-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_02.nc",
+      "bytes": 28369413,
+      "sha256": "84208b23122a62a1a789a21dbab808574b35fa821ee4197569b7f9034e0063aa",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 696,
+      "t_start": "2020-02-01 00:00:00",
+      "t_end": "2020-02-29 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_02_ssrd.nc",
+      "bytes": 2800477,
+      "sha256": "7648ebb715c5197b95f9c17b02536576f4003faa58153f90938ab2ecef7443cd",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 696,
+      "t_start": "2020-02-01 00:00:00",
+      "t_end": "2020-02-29 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_03.nc",
+      "bytes": 30475814,
+      "sha256": "fbb2ea8de8c982dd84597d072207105bff2c19053649e7a88e371c55e67f0253",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-03-01 00:00:00",
+      "t_end": "2020-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_03_ssrd.nc",
+      "bytes": 3431770,
+      "sha256": "376b7345455d56738fb96ab7f96d8c7678376d39b51887b9800c3937e11f7b73",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-03-01 00:00:00",
+      "t_end": "2020-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_04.nc",
+      "bytes": 30160062,
+      "sha256": "faf98b5f65e5d1455ec2ae213e3b9c4e1f2ec393878307d724b2f273c6fe3b95",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-04-01 00:00:00",
+      "t_end": "2020-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_04_ssrd.nc",
+      "bytes": 3673479,
+      "sha256": "136fe970998dff71a441c0e92f9311eb99a804e13b47f4b04e4b998d2d7ee9ef",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-04-01 00:00:00",
+      "t_end": "2020-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_05.nc",
+      "bytes": 31337065,
+      "sha256": "a9ae98bb745deaf0bcc70508b61097ce97922de22302b9e15c788a5473823fa9",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-05-01 00:00:00",
+      "t_end": "2020-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_05_ssrd.nc",
+      "bytes": 4125072,
+      "sha256": "4cf5ed6dadbf3da61b50e1fa698648c3c51326f8b916cafc0b38383514cbb90d",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-05-01 00:00:00",
+      "t_end": "2020-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_06.nc",
+      "bytes": 30963531,
+      "sha256": "9fcb909a137215383b84a3bb9e6ef76034529230dd098d2be6f3db321a7b09c3",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-06-01 00:00:00",
+      "t_end": "2020-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_06_ssrd.nc",
+      "bytes": 4077948,
+      "sha256": "60f967931061501d977efff73ed220ced39be7b9bf71629dc3cadc5df6aae733",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-06-01 00:00:00",
+      "t_end": "2020-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_07.nc",
+      "bytes": 32308320,
+      "sha256": "aea8865a8e9b2afb5d088e5742fb13a5e19671e5c975c6a4b278063bc45d8a15",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-07-01 00:00:00",
+      "t_end": "2020-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_07_ssrd.nc",
+      "bytes": 4168666,
+      "sha256": "4f2548c113306478dfe2d127ebed48b13146a6e16e7dec6ca3fe6e05ea8eb9da",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-07-01 00:00:00",
+      "t_end": "2020-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_08.nc",
+      "bytes": 32094567,
+      "sha256": "4f9b4da868636611743e15c4e701932b964afbd567d8d4a655faaf0cf00e53d4",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-08-01 00:00:00",
+      "t_end": "2020-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_08_ssrd.nc",
+      "bytes": 3939663,
+      "sha256": "44c72e358e252880c6903e15ff045b9c611072a2daefd629d8219495649e751f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-08-01 00:00:00",
+      "t_end": "2020-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_09.nc",
+      "bytes": 29991788,
+      "sha256": "8d0016a61e83bfebeaec4ecaa3597fdd66ffb846b1e94cde47f99aed36a15ec3",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-09-01 00:00:00",
+      "t_end": "2020-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_09_ssrd.nc",
+      "bytes": 3396900,
+      "sha256": "eb059330be723cd6dcf57d1c54df21dfa3c75668da9562d1a13f31ad7c1fcd7e",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-09-01 00:00:00",
+      "t_end": "2020-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_10.nc",
+      "bytes": 30755570,
+      "sha256": "e4cfd05552fe27b8a774d1defa54fbfa81084a507801b01614ed119ee5a31e22",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-10-01 00:00:00",
+      "t_end": "2020-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_10_ssrd.nc",
+      "bytes": 3117365,
+      "sha256": "dfd8651466d48685e713c8fe2fef3dc70bfae23c7d73a6d3e7babb4602202634",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-10-01 00:00:00",
+      "t_end": "2020-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_11.nc",
+      "bytes": 29522326,
+      "sha256": "4a053aa3cea4ad24736fb22da25b7ef3ca67d87e4fcd9ecae8980e92ab2b83a0",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-11-01 00:00:00",
+      "t_end": "2020-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_11_ssrd.nc",
+      "bytes": 2591982,
+      "sha256": "c985b9e6e7556be3b83f74ae202c791fb3810225dae86d51b2dc9b82a6f7040f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2020-11-01 00:00:00",
+      "t_end": "2020-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_12.nc",
+      "bytes": 30745685,
+      "sha256": "0693e96808a7eeeb08c29ac6b95e24ead1390c4af87b977ad3ba6d01c73da55d",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-12-01 00:00:00",
+      "t_end": "2020-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2020_12_ssrd.nc",
+      "bytes": 2579023,
+      "sha256": "1e3e397548f928cddb05b69f83e04894e1517f9cdae4907ac49c6253e6c7f1c5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2020-12-01 00:00:00",
+      "t_end": "2020-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_01.nc",
+      "bytes": 30824571,
+      "sha256": "44a0ed33fde2851f8084f970532bef4d86022cc826c38a63dd0e6293ee986a3a",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-01-01 00:00:00",
+      "t_end": "2021-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_01_ssrd.nc",
+      "bytes": 2710270,
+      "sha256": "b23152e18dc3266ccaa99c03aa4d3b6757b4fb12e99744bd67ce001e954e0086",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-01-01 00:00:00",
+      "t_end": "2021-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_02.nc",
+      "bytes": 27868663,
+      "sha256": "a6493a4b20d202c915942bd1f400f774763dbc491cb719c9ed1eb05078d71977",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2021-02-01 00:00:00",
+      "t_end": "2021-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_02_ssrd.nc",
+      "bytes": 2733522,
+      "sha256": "65f88e5d59d2fcd776938fe58935bb5380b18372f6691413c2da6467fb6bb76a",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2021-02-01 00:00:00",
+      "t_end": "2021-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_03.nc",
+      "bytes": 30527362,
+      "sha256": "4bb48ff8b80624ff9a01bc7f96bef44b87026de9cbd76a6ddfa48915a678b33e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-03-01 00:00:00",
+      "t_end": "2021-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_03_ssrd.nc",
+      "bytes": 3321351,
+      "sha256": "b5abce2fe70b7213544a1833e5d8c5fccfadd9f5d567f7b07471d3eed847134f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-03-01 00:00:00",
+      "t_end": "2021-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_04.nc",
+      "bytes": 30185422,
+      "sha256": "5d7f958097f2f8aba38c06c8144b0d5b75aafe31b6049ba5cf8d908f37ed204b",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-04-01 00:00:00",
+      "t_end": "2021-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_04_ssrd.nc",
+      "bytes": 3628846,
+      "sha256": "3b593894958b21a7f35e3bc1588c39498e25067f1120a37b861198c94d3db333",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-04-01 00:00:00",
+      "t_end": "2021-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_05.nc",
+      "bytes": 31345431,
+      "sha256": "c1688ffa6934eb65d181ad118b0c919d6be4b04b261d338a2ca9af293e31a0ad",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-05-01 00:00:00",
+      "t_end": "2021-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_05_ssrd.nc",
+      "bytes": 4089403,
+      "sha256": "71268867bb7458538314c7281e3b6dfc413d355da89cda7e22318b1f74636802",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-05-01 00:00:00",
+      "t_end": "2021-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_06.nc",
+      "bytes": 30598074,
+      "sha256": "3e663779aae9743e7e506c23565f5e049f42fe5c9072656be8d0a62e8cbb054a",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-06-01 00:00:00",
+      "t_end": "2021-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_06_ssrd.nc",
+      "bytes": 4129260,
+      "sha256": "01f648668404a11c9a84f394bbfe223efb6b1b42c00b976039ad7a8b029ac27f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-06-01 00:00:00",
+      "t_end": "2021-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_07.nc",
+      "bytes": 31918315,
+      "sha256": "a3d6e6288bceca6ca54c88786b25172a7ac12dd505fc0df42aa207a0909448d1",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-07-01 00:00:00",
+      "t_end": "2021-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_07_ssrd.nc",
+      "bytes": 4181848,
+      "sha256": "0598cfb40e08c58977554072ab41c826fdf2a20b981430bae2f5212655ad4a2a",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-07-01 00:00:00",
+      "t_end": "2021-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_08.nc",
+      "bytes": 31902591,
+      "sha256": "535928a5090f70660d9055d28000f9a666f90cc38fc3a63651971d92b618eb58",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-08-01 00:00:00",
+      "t_end": "2021-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_08_ssrd.nc",
+      "bytes": 3935631,
+      "sha256": "f76da22664a67086ecc3ddc1a4affdabe9fcc9cf7a4d9863855a7470cbb73a2a",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-08-01 00:00:00",
+      "t_end": "2021-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_09.nc",
+      "bytes": 30360019,
+      "sha256": "cfe587003961b9290e24d83ec4d11b7280939161aa8a23a4646c75e3083c9828",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-09-01 00:00:00",
+      "t_end": "2021-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_09_ssrd.nc",
+      "bytes": 3392954,
+      "sha256": "0127c035eea8e4cbc3eb1eacd937ff13242b75fbc97e769b7202e6203a92f9a6",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-09-01 00:00:00",
+      "t_end": "2021-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_10.nc",
+      "bytes": 30980958,
+      "sha256": "05e2e780e8fda6d3adc31a4fcbd33be203c2a4e4a61e5c9f1847fddb5cc673fe",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-10-01 00:00:00",
+      "t_end": "2021-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_10_ssrd.nc",
+      "bytes": 3153130,
+      "sha256": "32c6c6b3c710c97780db0673d9e2b1826b9f99f5816f3106bccd4dd4b4a1eaa3",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-10-01 00:00:00",
+      "t_end": "2021-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_11.nc",
+      "bytes": 30029725,
+      "sha256": "77534e5cff348d6ae17864211974460835844ae47e19ce589ff1fd210d74bec3",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-11-01 00:00:00",
+      "t_end": "2021-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_11_ssrd.nc",
+      "bytes": 2623754,
+      "sha256": "d2a0d11a481d2dd7a14073a55f3ca4426b4d9f13b41e4d7d54f51f498f2746b3",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2021-11-01 00:00:00",
+      "t_end": "2021-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_12.nc",
+      "bytes": 30674485,
+      "sha256": "6a91cb16b465b59179cd3de9901e2ea95a5314473fdbb27de1797c900bea3c14",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-12-01 00:00:00",
+      "t_end": "2021-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2021_12_ssrd.nc",
+      "bytes": 2568546,
+      "sha256": "d3a9df6030d43e6f5117c1d7f1045201db7b39ddab7b0a2a0dc6cc902366a1f0",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2021-12-01 00:00:00",
+      "t_end": "2021-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_01.nc",
+      "bytes": 31249963,
+      "sha256": "7fbe0a0558ba7ebd06bfc4ac7e83232df251457b02c49ef624865b8c2d7d6804",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-01-01 00:00:00",
+      "t_end": "2022-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_01_ssrd.nc",
+      "bytes": 2677440,
+      "sha256": "9b12fc09f68331dbee97322c2607c4fccb8d6709e6d990cd7eca603ad79d7759",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-01-01 00:00:00",
+      "t_end": "2022-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_02.nc",
+      "bytes": 27625924,
+      "sha256": "98705b9fdb505900e04f5e0dfeef1c75dd198e44058c7c3c5c085fc0d8caf0a5",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2022-02-01 00:00:00",
+      "t_end": "2022-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_02_ssrd.nc",
+      "bytes": 2691252,
+      "sha256": "35f94604b178baeb79816bed5eb34e15fc244c91c8963f0abbb6e2f421f855c2",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2022-02-01 00:00:00",
+      "t_end": "2022-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_03.nc",
+      "bytes": 30786933,
+      "sha256": "43f544901aac77f2500241d4c9dd091227f77dfcfd8f792d3906c191b129fb0e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-03-01 00:00:00",
+      "t_end": "2022-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_03_ssrd.nc",
+      "bytes": 3391348,
+      "sha256": "c0340edff5893b49a7c36828c14fe49ef1e204f8f6a8f9fddb1013ba20cfed99",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-03-01 00:00:00",
+      "t_end": "2022-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_04.nc",
+      "bytes": 30076266,
+      "sha256": "acf2ca36a6f25e92efa1b22f9d98b443c02e4ce5adb40527699ec765c5e0aba1",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-04-01 00:00:00",
+      "t_end": "2022-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_04_ssrd.nc",
+      "bytes": 3668168,
+      "sha256": "db5229e71f5581656498c117391285e9f1b0d5631237300b3c7173cc56ab162c",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-04-01 00:00:00",
+      "t_end": "2022-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_05.nc",
+      "bytes": 31314015,
+      "sha256": "1335e6b842a8a0b987ea67e3b47391d2925f201600a7fd48014e1192eb25d360",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-05-01 00:00:00",
+      "t_end": "2022-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_05_ssrd.nc",
+      "bytes": 4097248,
+      "sha256": "3070485ed0f1f9552a8c04ec35dfa5a3432ead16994ddf37540211d4e2ed5286",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-05-01 00:00:00",
+      "t_end": "2022-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_06.nc",
+      "bytes": 30839881,
+      "sha256": "fac051e94ff4a8c1f7886e41a4953331c3b6bce3158e3a7eeed177fecb5017ac",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-06-01 00:00:00",
+      "t_end": "2022-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_06_ssrd.nc",
+      "bytes": 4053268,
+      "sha256": "d604cf181695a48f4d58cf96e118f83ada69da5a7c4dfa243cf45adabdc0eb14",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-06-01 00:00:00",
+      "t_end": "2022-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_07.nc",
+      "bytes": 31905456,
+      "sha256": "abcbcd7407f75858172938a71c4e3c7007ee2c65bffebd6f969d513dfff5bc65",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-07-01 00:00:00",
+      "t_end": "2022-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_07_ssrd.nc",
+      "bytes": 4212549,
+      "sha256": "b78a33a34aa8c6a63bfab4f80fe260d11474d2554734d46d055da3967c65bbd1",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-07-01 00:00:00",
+      "t_end": "2022-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_08.nc",
+      "bytes": 31962687,
+      "sha256": "e27ae5ab884c5ccfe16c98addf8faa272c229d45253329719ae56d75a1338aa6",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-08-01 00:00:00",
+      "t_end": "2022-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_08_ssrd.nc",
+      "bytes": 3943790,
+      "sha256": "ef5fda0db45ac215aef0dda609d9a4b285811c6cce5b9ba200631afc6e4346df",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-08-01 00:00:00",
+      "t_end": "2022-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_09.nc",
+      "bytes": 30331669,
+      "sha256": "a763c833063c8c0ab3d618a15d7d37551145ccba13170577328f3e4ea990d5fc",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-09-01 00:00:00",
+      "t_end": "2022-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_09_ssrd.nc",
+      "bytes": 3412855,
+      "sha256": "b6a76d14fd2b7a3c186415de96fa5cb70dd12a5934d27f0b2ddcd751a2a65d23",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-09-01 00:00:00",
+      "t_end": "2022-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_10.nc",
+      "bytes": 31093833,
+      "sha256": "bce0b7bd19590801bac86460c7fbc1cf85dbd3032d3243b28b0f812e34666557",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-10-01 00:00:00",
+      "t_end": "2022-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_10_ssrd.nc",
+      "bytes": 3044180,
+      "sha256": "bf42c0de9c82e5dec9c1d940ccb5f594b734a583d0431462e20dbb1a761767dc",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-10-01 00:00:00",
+      "t_end": "2022-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_11.nc",
+      "bytes": 29571755,
+      "sha256": "0b39ac6cd9dcd8dd9c7fc73994648dbc0e708f58bad345e4b02110ea2b983a0e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-11-01 00:00:00",
+      "t_end": "2022-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_11_ssrd.nc",
+      "bytes": 2621657,
+      "sha256": "152140422d69a18064cb9a3b06db9fa7a6143fe5f2209a121eb16c0cadd1e3d0",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2022-11-01 00:00:00",
+      "t_end": "2022-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_12.nc",
+      "bytes": 30389176,
+      "sha256": "1b81ae0e480e8233b0d083fd688b2ea353aa249207621c6c719ab4738a63882d",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-12-01 00:00:00",
+      "t_end": "2022-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2022_12_ssrd.nc",
+      "bytes": 2583764,
+      "sha256": "9743481b9979311f1fc12dc8066a1ab9b87ce52b5e37342d277f4b34cf7ee3b9",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2022-12-01 00:00:00",
+      "t_end": "2022-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_01.nc",
+      "bytes": 30453049,
+      "sha256": "c2ade8ed1195c55721d98e11027249cdc08fad2d9528e2d8f70685c3caed9a33",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-01-01 00:00:00",
+      "t_end": "2023-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_01_ssrd.nc",
+      "bytes": 2698633,
+      "sha256": "fdbc7a3ca05b4988ac831cac3df4c06a8bcace50d7d3606bd8b5bcd9184fc3da",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-01-01 00:00:00",
+      "t_end": "2023-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_02.nc",
+      "bytes": 27742731,
+      "sha256": "c7f67ea729c6ad786ef8e351bea8c86bfb549c6788e2bf9bf292fb6a6814d438",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2023-02-01 00:00:00",
+      "t_end": "2023-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_02_ssrd.nc",
+      "bytes": 2698657,
+      "sha256": "2d60301247a68f0484b70df9bfc807af0009121c93581cf601e86e1431315a04",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2023-02-01 00:00:00",
+      "t_end": "2023-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_03.nc",
+      "bytes": 30615751,
+      "sha256": "1e8b8b652113b2086c7248500edaeb78d361f687e3fc6430ef0e01ab21ec64e6",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-03-01 00:00:00",
+      "t_end": "2023-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_03_ssrd.nc",
+      "bytes": 3373207,
+      "sha256": "8e17ded2a3cb9d48684f3ffb9d6562543dc4336d2da306a3966728a80bb10287",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-03-01 00:00:00",
+      "t_end": "2023-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_04.nc",
+      "bytes": 29861184,
+      "sha256": "6584f4811ed106e47af1c092e2fb74fecf5d2dafff8580d6f65c4e98501f5408",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-04-01 00:00:00",
+      "t_end": "2023-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_04_ssrd.nc",
+      "bytes": 3604525,
+      "sha256": "2e4fde7372f25fae20a243599de780cc44934a3fa74b085b991946034ef26448",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-04-01 00:00:00",
+      "t_end": "2023-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_05.nc",
+      "bytes": 31456959,
+      "sha256": "b838861f3f8c631cd2646918f8034935c4a17c7845d0657e4864c4335ad47166",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-05-01 00:00:00",
+      "t_end": "2023-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_05_ssrd.nc",
+      "bytes": 3996551,
+      "sha256": "061fd00f5eda7be7107bfcd4c6532568ccb23c4a493009fed9f2cecf209d24f8",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-05-01 00:00:00",
+      "t_end": "2023-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_06.nc",
+      "bytes": 31027782,
+      "sha256": "146d73738c1979fdbc78d4c93ece4ce2190c14e58bd443db17340d792c7ba805",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-06-01 00:00:00",
+      "t_end": "2023-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_06_ssrd.nc",
+      "bytes": 4107150,
+      "sha256": "60986a6cebb591d6e90f753f8341937129d976c9271761877d540928f04c18aa",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-06-01 00:00:00",
+      "t_end": "2023-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_07.nc",
+      "bytes": 32289867,
+      "sha256": "b5ce7f5dcee3f0910ebb0212b95634d8f02e284740f5a71a4928f2e100d23683",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-07-01 00:00:00",
+      "t_end": "2023-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_07_ssrd.nc",
+      "bytes": 4224669,
+      "sha256": "ab6795c71c1ce76d09cfe58b354cc1fa663efb325e1513dbcf31132415f6647d",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-07-01 00:00:00",
+      "t_end": "2023-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_08.nc",
+      "bytes": 31849730,
+      "sha256": "a674f54e8fc884288ece207d46bceec73f629533274d20669139a3fa2ecfbeda",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-08-01 00:00:00",
+      "t_end": "2023-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_08_ssrd.nc",
+      "bytes": 3925131,
+      "sha256": "2fae578e05a92dcad9b10b73e115b9f34dd0b88881e61fd5da3569f0013b7046",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-08-01 00:00:00",
+      "t_end": "2023-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_09.nc",
+      "bytes": 30699648,
+      "sha256": "2adcb57928fcbc9c3228195e468944a548e901e76961f876aa725cd0ed2ec8a3",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-09-01 00:00:00",
+      "t_end": "2023-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_09_ssrd.nc",
+      "bytes": 3443110,
+      "sha256": "c12f1a0cf8da4663216a9a195fc0efb92276be9ceaf747a716d0b057116ab671",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-09-01 00:00:00",
+      "t_end": "2023-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_10.nc",
+      "bytes": 30928015,
+      "sha256": "0a78003b2f7a91db879d909eec33f2db7f40433b9819ea62aa2fe16a2fa50985",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-10-01 00:00:00",
+      "t_end": "2023-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_10_ssrd.nc",
+      "bytes": 3137596,
+      "sha256": "95529b9661dabcd41d89ae10e87bf8461c67de8e07dc8f9fc723a1fade3e1093",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-10-01 00:00:00",
+      "t_end": "2023-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_11.nc",
+      "bytes": 29826883,
+      "sha256": "1b794b30218e9039c4878e3b0d6ce2cf81b03d94f9940e5be9d084b54fab798e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-11-01 00:00:00",
+      "t_end": "2023-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_11_ssrd.nc",
+      "bytes": 2619315,
+      "sha256": "f4d5a7f3e2044fedf0b6f6cbb10e4c5663049bfe3ddc87f221698c65bdb08ce5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2023-11-01 00:00:00",
+      "t_end": "2023-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_12.nc",
+      "bytes": 30358095,
+      "sha256": "304ac7acdb6a18d40f0af4d8c82fb088c4b35b06a3dd57143aea07bfa03ee638",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-12-01 00:00:00",
+      "t_end": "2023-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2023_12_ssrd.nc",
+      "bytes": 2556669,
+      "sha256": "245be66e88cf2438290a460ffac3735c16dfdeeb9493bfd6de9796e4a96efd4e",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2023-12-01 00:00:00",
+      "t_end": "2023-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_01.nc",
+      "bytes": 30056968,
+      "sha256": "1dc11d7ab3a3689d93bd1003ed852568961f96dc8215d783d59d333971132561",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-01-01 00:00:00",
+      "t_end": "2024-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_01_ssrd.nc",
+      "bytes": 2683229,
+      "sha256": "cab083d947be3034ffe7f081126c455658f72f826a1cc96dc2eae88fd3ebf0e5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-01-01 00:00:00",
+      "t_end": "2024-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_02.nc",
+      "bytes": 28824595,
+      "sha256": "f1041ca4bdd9f189f5f8506ac6d0f515be454a49679439a420726ae7325de419",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 696,
+      "t_start": "2024-02-01 00:00:00",
+      "t_end": "2024-02-29 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_02_ssrd.nc",
+      "bytes": 2765241,
+      "sha256": "e5ccc9083dafd1eba7ec72187fc82d9b3e51648bdef9041985e57225bded9c8f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 696,
+      "t_start": "2024-02-01 00:00:00",
+      "t_end": "2024-02-29 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_03.nc",
+      "bytes": 30738474,
+      "sha256": "a78ef9c950ca758a7492f5ac7923280cc7c096c33d948241c626ddcdba295d77",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-03-01 00:00:00",
+      "t_end": "2024-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_03_ssrd.nc",
+      "bytes": 3366111,
+      "sha256": "8fbd68ab20218a59013fd2dee5cd813ef6ce8d23cf80ca83476c9a0b05f61352",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-03-01 00:00:00",
+      "t_end": "2024-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_04.nc",
+      "bytes": 29767453,
+      "sha256": "e6f134fe60b15ad3eb1449a1b9a49117f57978cc8ff3fd3d3e7058901835048e",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-04-01 00:00:00",
+      "t_end": "2024-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_04_ssrd.nc",
+      "bytes": 3640138,
+      "sha256": "001f39e5976031f9111e39f96335349d00c8a3cccb563ffafc880a33ee362a17",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-04-01 00:00:00",
+      "t_end": "2024-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_05.nc",
+      "bytes": 31681871,
+      "sha256": "4e24282baff698ae9bba60662107e48f4107464201d328db5679ba487edd9185",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-05-01 00:00:00",
+      "t_end": "2024-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_05_ssrd.nc",
+      "bytes": 4138998,
+      "sha256": "4b628c9969f8d12b533bb22ece0c32d0870152e2acad40cce4a25c91febefff8",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-05-01 00:00:00",
+      "t_end": "2024-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_06.nc",
+      "bytes": 30737717,
+      "sha256": "f588755e61ab5d6a14bda9fc32c1274af5bf33ada0d92400febddc3604a0950d",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-06-01 00:00:00",
+      "t_end": "2024-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_06_ssrd.nc",
+      "bytes": 4133159,
+      "sha256": "4bcd2fb46bda1db9737530bfd7db1552ed43abfc736df38a803fc3bfc601c3d7",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-06-01 00:00:00",
+      "t_end": "2024-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_07.nc",
+      "bytes": 31970879,
+      "sha256": "df097379a5f7a905cff7ab69ca7de84b5c1887edc3364c5a726b108fcebf49b2",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-07-01 00:00:00",
+      "t_end": "2024-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_07_ssrd.nc",
+      "bytes": 4205403,
+      "sha256": "17c75d36472581e1aee665dddeeca976ed9d0ddcc0f0ab7c1ce35ba5996ec35a",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-07-01 00:00:00",
+      "t_end": "2024-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_08.nc",
+      "bytes": 31963492,
+      "sha256": "b3c6fdb69ec844c5c6f401e9a0537a0d85b43872f3579ba7237817df8f6e7b65",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-08-01 00:00:00",
+      "t_end": "2024-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_08_ssrd.nc",
+      "bytes": 3901480,
+      "sha256": "43eb647d9e8a475124f8e15d52cd936bd6318fe4f68114b0968862cb72cc6870",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-08-01 00:00:00",
+      "t_end": "2024-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_09.nc",
+      "bytes": 30051987,
+      "sha256": "201484376784006802e68514ea46cf38fc628f8e0e55906e31954e94a1f65de1",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-09-01 00:00:00",
+      "t_end": "2024-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_09_ssrd.nc",
+      "bytes": 3363942,
+      "sha256": "b1379a5b1d4cf0b3b585d9705ac08e119e8ea0ea14ccefeb5a34307573001af3",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-09-01 00:00:00",
+      "t_end": "2024-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_10.nc",
+      "bytes": 30632420,
+      "sha256": "20797a7109431c465fe742b963e9d6e343a11c118edf6680a82434c218f5a23a",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-10-01 00:00:00",
+      "t_end": "2024-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_10_ssrd.nc",
+      "bytes": 2961033,
+      "sha256": "8266987406efc4d7183ef24918acb331720ccc20d464193ede0caa45e8769d49",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-10-01 00:00:00",
+      "t_end": "2024-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_11.nc",
+      "bytes": 29729145,
+      "sha256": "bf3efa7cc2e898717fe90b5d406b59bbf40c03fcd4987f2e63acb4fee718c541",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-11-01 00:00:00",
+      "t_end": "2024-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_11_ssrd.nc",
+      "bytes": 2666839,
+      "sha256": "d0f87ac8358c7de3d7c6afed91fe31bf09161ab9028ef47ad61dd6b98b232ca2",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2024-11-01 00:00:00",
+      "t_end": "2024-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_12.nc",
+      "bytes": 30587438,
+      "sha256": "b816e01d99e9d05ac1d5c4ed149f3e2b8607472b701596e65f6835b71765d407",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-12-01 00:00:00",
+      "t_end": "2024-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2024_12_ssrd.nc",
+      "bytes": 2578410,
+      "sha256": "8042c88fc31296e396b61bdfa3b7a2232c5960ddbd5c5fb9b0187ac601411112",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2024-12-01 00:00:00",
+      "t_end": "2024-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_01.nc",
+      "bytes": 30904101,
+      "sha256": "ebca6bf83ddda77227fa652cf4b68e2412dfb66fa7d42482eb273381a477f196",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-01-01 00:00:00",
+      "t_end": "2025-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_01_ssrd.nc",
+      "bytes": 2669918,
+      "sha256": "4eac2c9f13b474c631b5772a28bf8e4cbbfbb053ba24f1ffb9fe2faeb4af35a0",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-01-01 00:00:00",
+      "t_end": "2025-01-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_02.nc",
+      "bytes": 27688943,
+      "sha256": "58a558f8e8ad23739792272e3c25aa778771eca340b85676ef9ae0e44bbcaa49",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2025-02-01 00:00:00",
+      "t_end": "2025-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_02_ssrd.nc",
+      "bytes": 2710005,
+      "sha256": "10cc27d72096a53ca451ca96a8a8bd1be3b1aa462b58c1d5e8a9e73c785a48db",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 672,
+      "t_start": "2025-02-01 00:00:00",
+      "t_end": "2025-02-28 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_03.nc",
+      "bytes": 30968782,
+      "sha256": "989663f0c0ef5b3459646fbcfdbb3a087673bf4c745113d79b5d5942f0586205",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-03-01 00:00:00",
+      "t_end": "2025-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_03_ssrd.nc",
+      "bytes": 3347941,
+      "sha256": "987ae9a113f052f18b1fcd15cd7eb7e12b872146849eae36418bfb8188a5e13f",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-03-01 00:00:00",
+      "t_end": "2025-03-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_04.nc",
+      "bytes": 30006550,
+      "sha256": "067f5137dac66c0482193e495cc4fdc8e0b044e46b4c439156a082651e20dee7",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-04-01 00:00:00",
+      "t_end": "2025-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_04_ssrd.nc",
+      "bytes": 3652122,
+      "sha256": "be7c3122a5edfe6dc6d670ffa3090e137072037a38fcf5d3602156b6757a1ede",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-04-01 00:00:00",
+      "t_end": "2025-04-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_05.nc",
+      "bytes": 31120546,
+      "sha256": "1a89a2a635a8a12a6a24120e27b33a6b5b9895d900514cea29bea2ba5842c722",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-05-01 00:00:00",
+      "t_end": "2025-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_05_ssrd.nc",
+      "bytes": 4138142,
+      "sha256": "e8b35c1bfe730792d75f99efa26723e9f92d4b9e513669a31fa23a79fbf7e3f5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-05-01 00:00:00",
+      "t_end": "2025-05-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_06.nc",
+      "bytes": 30649872,
+      "sha256": "02a10841b1bcb27c26e0c9fd17acd071c730968cd46a34b010461406efea2fdc",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-06-01 00:00:00",
+      "t_end": "2025-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_06_ssrd.nc",
+      "bytes": 4110724,
+      "sha256": "988bcf830bc9af738a98b87e7164811acb46c070f75c79db9a6c7c7c5452c4c5",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-06-01 00:00:00",
+      "t_end": "2025-06-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_07.nc",
+      "bytes": 32141850,
+      "sha256": "e6b4d05eead4cc0961bbfe75b5a9f588361ceae701e60e1d4bf61ceb5fe3d33b",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-07-01 00:00:00",
+      "t_end": "2025-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_07_ssrd.nc",
+      "bytes": 4198664,
+      "sha256": "811f912a9e891ab80410d8ad63415645777460c53faac8386a7bc223e6540967",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-07-01 00:00:00",
+      "t_end": "2025-07-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_08.nc",
+      "bytes": 32114313,
+      "sha256": "c3d37d5b30d118e32e99379ab626a84e65209f71fc4644e26015851b57c088a2",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-08-01 00:00:00",
+      "t_end": "2025-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_08_ssrd.nc",
+      "bytes": 3930680,
+      "sha256": "34c278d79da4e3645668c1fa8dc7d590303cc47038b74535f842967f203df626",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-08-01 00:00:00",
+      "t_end": "2025-08-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_09.nc",
+      "bytes": 30756389,
+      "sha256": "6d3774f9ca540cea6519b7757da7f9f13766ea24416e926239fdf7d6fbd3f05a",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-09-01 00:00:00",
+      "t_end": "2025-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_09_ssrd.nc",
+      "bytes": 3405471,
+      "sha256": "8efc50042bce5259164ba29db6a92cb08a2b123cbea1a756b43f8aaf6421849b",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-09-01 00:00:00",
+      "t_end": "2025-09-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_10.nc",
+      "bytes": 30919041,
+      "sha256": "fe2d92e238e2c7649b358d97625a207ef276968dab4bf7676edbbc21c0a5a3dc",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-10-01 00:00:00",
+      "t_end": "2025-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_10_ssrd.nc",
+      "bytes": 3077293,
+      "sha256": "5d18af04ad18719c49dd0732b57af5fe326e9439208ea4134640339041cec364",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-10-01 00:00:00",
+      "t_end": "2025-10-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_11.nc",
+      "bytes": 29861552,
+      "sha256": "25cab0223e7e19f255d4dc8b77b9676f592644ad29f792310b867d3aa78e565b",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-11-01 00:00:00",
+      "t_end": "2025-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_11_ssrd.nc",
+      "bytes": 2647221,
+      "sha256": "6aa1fb8676a781e65dcc140cf67e881500fb54e8eb7eb474aec8c93e80fc24f7",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 720,
+      "t_start": "2025-11-01 00:00:00",
+      "t_end": "2025-11-30 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_12.nc",
+      "bytes": 30953467,
+      "sha256": "466c251151ae4304f634638345b55f1ca7261441ed0fea38040733da1c1ad450",
+      "variables": [
+        "d2m",
+        "t2m",
+        "tcc",
+        "u10",
+        "v10"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-12-01 00:00:00",
+      "t_end": "2025-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "t2m": 0.0,
+        "d2m": 0.0,
+        "u10": 0.0,
+        "v10": 0.0,
+        "tcc": 0.0
+      },
+      "status": "PASS"
+    },
+    {
+      "file": "era5_pjm_2025_12_ssrd.nc",
+      "bytes": 2592392,
+      "sha256": "8a159ef7ac94ebb794f12fa8c8c6b08fd2806673df6054116f8ab8b2902b48d4",
+      "variables": [
+        "ssrd"
+      ],
+      "missing_vars": [],
+      "n_hours": 744,
+      "t_start": "2025-12-01 00:00:00",
+      "t_end": "2025-12-31 23:00:00",
+      "duplicates": 0,
+      "hourly_continuous": true,
+      "nan_pct": {
+        "ssrd": 0.0
+      },
+      "status": "PASS"
+    }
+  ]
+}

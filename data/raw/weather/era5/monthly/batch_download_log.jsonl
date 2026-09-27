@@ -1,0 +1,147 @@
+﻿{"ts": "2026-09-26T06:20:54Z", "month_key": "2020-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2693869 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:22:34Z", "month_key": "2020-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=696 nan=0 bytes=2800477 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:24:01Z", "month_key": "2020-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3431770 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:26:05Z", "month_key": "2020-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3673479 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:28:12Z", "month_key": "2020-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4125072 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:29:48Z", "month_key": "2020-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4077948 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:31:15Z", "month_key": "2020-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4168666 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:32:44Z", "month_key": "2020-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3939663 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:34:17Z", "month_key": "2020-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3396900 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:36:23Z", "month_key": "2020-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3117365 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:37:52Z", "month_key": "2020-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2591982 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:39:24Z", "month_key": "2020-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2579023 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T06:44:52Z", "month_key": "2021-01-full", "status": "FAILED", "detail": "validation failed: ValueError: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:\nhttps://docs.xarray.dev/en/stable/getting-started-guide/installing.html\nhttps://docs.xarray.dev/en/stable/user-guide/io.html"}
+{"ts": "2026-09-26T06:48:47Z", "month_key": "2021-02-full", "status": "FAILED", "detail": "validation failed: ValueError: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:\nhttps://docs.xarray.dev/en/stable/getting-started-guide/installing.html\nhttps://docs.xarray.dev/en/stable/user-guide/io.html"}
+{"ts": "2026-09-26T06:54:27Z", "month_key": "2021-03-full", "status": "FAILED", "detail": "validation failed: ValueError: did not find a match in any of xarray's currently installed IO backends ['netcdf4', 'scipy']. Consider explicitly selecting one of the installed engines via the ``engine`` parameter, or installing additional IO dependencies, see:\nhttps://docs.xarray.dev/en/stable/getting-started-guide/installing.html\nhttps://docs.xarray.dev/en/stable/user-guide/io.html"}
+{"ts": "2026-09-26T07:04:35Z", "month_key": "2021-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30824571 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:06:35Z", "month_key": "2021-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30824571 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:08:09Z", "month_key": "2021-02-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0 bytes=27868663 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:11:12Z", "month_key": "2021-01-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:11:13Z", "month_key": "2021-02-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0"}
+{"ts": "2026-09-26T07:11:48Z", "month_key": "2021-03-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30527362 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:18:40Z", "month_key": "2021-04-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30185422 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:21:59Z", "month_key": "2021-05-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31345431 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:25:09Z", "month_key": "2021-06-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30598074 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:28:24Z", "month_key": "2021-07-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31918315 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:31:37Z", "month_key": "2021-08-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31902591 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:34:46Z", "month_key": "2021-09-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30360019 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:36:51Z", "month_key": "2021-01-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:36:52Z", "month_key": "2021-02-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0"}
+{"ts": "2026-09-26T07:36:53Z", "month_key": "2021-03-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:36:53Z", "month_key": "2021-04-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0"}
+{"ts": "2026-09-26T07:36:54Z", "month_key": "2021-05-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:36:54Z", "month_key": "2021-06-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0"}
+{"ts": "2026-09-26T07:36:55Z", "month_key": "2021-07-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:36:56Z", "month_key": "2021-08-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0"}
+{"ts": "2026-09-26T07:36:56Z", "month_key": "2021-09-full", "status": "SKIP_VALID", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0"}
+{"ts": "2026-09-26T07:37:33Z", "month_key": "2021-10-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30980958 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:41:01Z", "month_key": "2021-11-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30029725 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:44:20Z", "month_key": "2021-12-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30674485 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:51:33Z", "month_key": "2022-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31249963 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:54:45Z", "month_key": "2022-02-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0 bytes=27625924 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T07:59:23Z", "month_key": "2022-03-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30786933 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:03:57Z", "month_key": "2022-04-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30076266 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:07:17Z", "month_key": "2022-05-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31314015 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:10:43Z", "month_key": "2022-06-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30839881 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:14:06Z", "month_key": "2022-07-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31905456 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:17:27Z", "month_key": "2022-08-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31962687 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:21:03Z", "month_key": "2022-09-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30331669 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:24:26Z", "month_key": "2022-10-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31093833 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:27:46Z", "month_key": "2022-11-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29571755 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:31:16Z", "month_key": "2022-12-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30389176 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:38:05Z", "month_key": "2023-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30453049 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:43:15Z", "month_key": "2023-02-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0 bytes=27742731 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:46:24Z", "month_key": "2023-03-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30615751 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:53:25Z", "month_key": "2023-04-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29861184 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:56:58Z", "month_key": "2023-05-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31456959 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T08:59:10Z", "month_key": "2023-06-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=31027782 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:02:23Z", "month_key": "2023-07-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=32289867 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:08:33Z", "month_key": "2023-08-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31849730 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:11:56Z", "month_key": "2023-09-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30699648 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:15:04Z", "month_key": "2023-10-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30928015 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:19:59Z", "month_key": "2023-11-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29826883 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:23:11Z", "month_key": "2023-12-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30358095 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:27:49Z", "month_key": "2024-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30056968 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:32:28Z", "month_key": "2024-02-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=696 nan=0 bytes=28824595 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:35:41Z", "month_key": "2024-03-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30738474 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:40:21Z", "month_key": "2024-04-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29767453 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:44:57Z", "month_key": "2024-05-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31681871 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:48:25Z", "month_key": "2024-06-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30737717 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:53:06Z", "month_key": "2024-07-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31970879 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T09:58:04Z", "month_key": "2024-08-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31963492 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:02:41Z", "month_key": "2024-09-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30051987 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:06:10Z", "month_key": "2024-10-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30632420 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:09:56Z", "month_key": "2024-11-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29729145 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:14:38Z", "month_key": "2024-12-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30587438 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:19:55Z", "month_key": "2025-01-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30904101 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:24:32Z", "month_key": "2025-02-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=672 nan=0 bytes=27688943 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:29:39Z", "month_key": "2025-03-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30968782 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:32:57Z", "month_key": "2025-04-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30006550 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:37:39Z", "month_key": "2025-05-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=31120546 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:40:49Z", "month_key": "2025-06-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30649872 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:44:17Z", "month_key": "2025-07-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=32141850 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:49:23Z", "month_key": "2025-08-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=32114313 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:52:38Z", "month_key": "2025-09-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=30756389 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T10:57:55Z", "month_key": "2025-10-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30919041 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:03:20Z", "month_key": "2025-11-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=720 nan=0 bytes=29861552 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:10:15Z", "month_key": "2025-12-full", "status": "SUCCESS", "detail": "ok vars=['d2m', 't2m', 'tcc', 'u10', 'v10'] n=744 nan=0 bytes=30953467 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:10:37Z", "month_key": "2021-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2710270 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:12:41Z", "month_key": "2021-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=672 nan=0 bytes=2733522 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:14:48Z", "month_key": "2021-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3321351 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:17:00Z", "month_key": "2021-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3628846 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:18:26Z", "month_key": "2021-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4089403 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:20:33Z", "month_key": "2021-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4129260 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:22:03Z", "month_key": "2021-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4181848 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:24:12Z", "month_key": "2021-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3935631 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:27:21Z", "month_key": "2021-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3392954 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:28:57Z", "month_key": "2021-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3153130 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:30:31Z", "month_key": "2021-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2623754 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:32:01Z", "month_key": "2021-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2568546 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:34:12Z", "month_key": "2022-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2677440 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:36:19Z", "month_key": "2022-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=672 nan=0 bytes=2691252 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:38:32Z", "month_key": "2022-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3391348 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:40:47Z", "month_key": "2022-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3668168 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:42:16Z", "month_key": "2022-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4097248 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:43:47Z", "month_key": "2022-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4053268 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:45:25Z", "month_key": "2022-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4212549 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:46:51Z", "month_key": "2022-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3943790 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:48:57Z", "month_key": "2022-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3412855 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:51:06Z", "month_key": "2022-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3044180 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:52:13Z", "month_key": "2022-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2621657 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:53:49Z", "month_key": "2022-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2583764 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:55:14Z", "month_key": "2023-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2698633 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:57:16Z", "month_key": "2023-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=672 nan=0 bytes=2698657 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T11:58:41Z", "month_key": "2023-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3373207 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:00:22Z", "month_key": "2023-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3604525 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:02:05Z", "month_key": "2023-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3996551 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:11:52Z", "month_key": "2023-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4107150 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:13:19Z", "month_key": "2023-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4224669 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:14:42Z", "month_key": "2023-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3925131 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:16:53Z", "month_key": "2023-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3443110 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:18:19Z", "month_key": "2023-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3137596 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:19:43Z", "month_key": "2023-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2619315 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:21:54Z", "month_key": "2023-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2556669 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:24:01Z", "month_key": "2024-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2683229 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:25:28Z", "month_key": "2024-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=696 nan=0 bytes=2765241 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:39:06Z", "month_key": "2024-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3366111 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:40:31Z", "month_key": "2024-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3640138 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:42:03Z", "month_key": "2024-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4138998 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:43:30Z", "month_key": "2024-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4133159 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:45:41Z", "month_key": "2024-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4205403 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:47:47Z", "month_key": "2024-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3901480 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:49:54Z", "month_key": "2024-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3363942 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:51:21Z", "month_key": "2024-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2961033 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:53:36Z", "month_key": "2024-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2666839 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:55:47Z", "month_key": "2024-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2578410 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:57:11Z", "month_key": "2025-01-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2669918 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T12:59:20Z", "month_key": "2025-02-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=672 nan=0 bytes=2710005 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:07:26Z", "month_key": "2025-03-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3347941 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:11:58Z", "month_key": "2025-04-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3652122 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:17:33Z", "month_key": "2025-05-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4138142 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:22:28Z", "month_key": "2025-06-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=4110724 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:23:53Z", "month_key": "2025-07-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=4198664 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:25:20Z", "month_key": "2025-08-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3930680 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:26:46Z", "month_key": "2025-09-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=3405471 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:28:11Z", "month_key": "2025-10-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=3077293 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:29:45Z", "month_key": "2025-11-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=720 nan=0 bytes=2647221 attempt=1 rid=n/a"}
+{"ts": "2026-09-26T13:32:54Z", "month_key": "2025-12-ssrd", "status": "SUCCESS", "detail": "ok vars=['ssrd'] n=744 nan=0 bytes=2592392 attempt=1 rid=n/a"}

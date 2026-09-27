@@ -1,0 +1,31 @@
+{
+  "dataset": "reanalysis-era5-single-levels",
+  "product_type": "reanalysis",
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_cloud_cover"
+  ],
+  "year": "2023",
+  "month": "10",
+  "bbox_requested": {
+    "north": 48.5,
+    "west": -92.0,
+    "south": 33.5,
+    "east": -73.5
+  },
+  "time_coverage": {
+    "start": "2023-10-01 00:00:00",
+    "end": "2023-10-31 23:00:00",
+    "n_steps": 744
+  },
+  "file": "era5_pjm_2023_10.nc",
+  "file_size_bytes": 30928015,
+  "acquisition_date": "2026-09-26T09:15:04Z",
+  "request_archive": "request_2023_10.json",
+  "cds_request_id": "n/a",
+  "mode": "full",
+  "spec": "configs/era5_request_v2.json"
+}

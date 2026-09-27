@@ -1,0 +1,35 @@
+{
+  "source": "US Census Bureau cartographic boundary cb_2024_us_state_20m (fallback approximation)",
+  "provider": "U.S. Census Bureau (public domain)",
+  "acquisition_date": "2026-09-25",
+  "source_url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_20m.zip",
+  "file_format": "GeoJSON (converted from Shapefile via pyshp; rings verified closed)",
+  "crs": "EPSG:4326 (source NAD83 meter-level equivalence noted)",
+  "version_vintage": "TIGER/GENZ 2024",
+  "license": "Public domain (U.S. federal)",
+  "fallback": true,
+  "states": [
+    "Delaware",
+    "District of Columbia",
+    "Illinois",
+    "Indiana",
+    "Kentucky",
+    "Maryland",
+    "Michigan",
+    "New Jersey",
+    "North Carolina",
+    "Ohio",
+    "Pennsylvania",
+    "Tennessee",
+    "Virginia",
+    "West Virginia"
+  ],
+  "partial_state_caveat": "Full-state polygons used; IL, KY, NC, TN, MI only partly in PJM \u2014 overstatement owned; replaced when PJM-published polygon acquired.",
+  "bbox_exact": {
+    "west": -91.511956,
+    "south": 33.851112,
+    "east": -73.893979,
+    "north": 48.21065
+  },
+  "notes": "Phase 1D-C2-B. No ERA5 downloaded. No forecasting data touched."
+}

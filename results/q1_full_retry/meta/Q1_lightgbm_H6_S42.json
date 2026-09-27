@@ -1,0 +1,62 @@
+{
+  "exp_id": "Q1_lightgbm_H6_S42",
+  "protocol_version": "Q1_v2_LAG1_001",
+  "model": "lightgbm",
+  "horizon": 6,
+  "seed": 42,
+  "dataset_path": "dataset/processed/pjm_smart_grid_2020_2025_v2.csv",
+  "dataset_sha256": "fb261563977bd9c096b96a5402914e1b511cd880b34293e0aad9bf421b6db486",
+  "dataset_version": "v2",
+  "n_rows": 52608,
+  "timestamp_range": [
+    "2020-01-01 05:00:00",
+    "2026-01-01 04:00:00"
+  ],
+  "feature_version": "Q1_V2_LAG1_001",
+  "feature_schema_hash": "ed0f6f5fb4df31566fb3b866c14810f7970a1865c8a0ee0b63b7c6b02a85705e",
+  "n_features": 49,
+  "origin_artifact": "experiments\\protocol\\test_origins.csv",
+  "origin_set_hash": "573de597b4ac4a4f7f2db79ff57045a0308ec38e013a329f16ae8017b19fe2ce",
+  "git_commit": "b51de1e",
+  "train_range": [
+    "2020-01-08 05:00:00",
+    "2023-12-31 23:00:00"
+  ],
+  "val_range": [
+    "2024-01-01 00:00:00",
+    "2024-12-31 23:00:00"
+  ],
+  "test_range": [
+    "2025-01-01 00:00:00",
+    "2025-12-31 23:00:00"
+  ],
+  "train_boundary": "2024-01-01",
+  "val_boundary": "2025-01-01",
+  "test_boundary": "2026-01-01",
+  "config_snapshot": "configs/pjm_data_v2.yaml;configs/experiment.yaml;configs/models.yaml",
+  "effective_config": {
+    "model": "lightgbm",
+    "horizon": 6,
+    "random_state": 42,
+    "config": {}
+  },
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.1",
+    "torch": "2.14.0+cpu",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0"
+  },
+  "cuda": {
+    "torch": "2.14.0+cpu",
+    "cuda_available": "False",
+    "cuda_version": "None",
+    "device_count": "0"
+  },
+  "runtime_s": 60.075,
+  "smoke": false,
+  "checkpoint": "results\\q1_full_retry\\checkpoints\\Q1_lightgbm_H6_S42.pt",
+  "checkpoint_sha256": "ec2a87f6d98e56099263e4da1e9c8aaac67c8755a55414c9c28e57ac85ec2fca"
+}

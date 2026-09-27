@@ -1,0 +1,14 @@
+# PJM boundary spec — Phase 1D-B DESIGN ONLY (not acquired).
+# Authority: docs/BOUNDARY_CARD.md, docs/PJM_WEATHER_FOOTPRINT.md section 2,
+#   configs/pjm_weather_weights.yaml (footprint block).
+# No files downloaded. Boundary file lands in data/raw/external/ (Phase 1D+)
+# with its sha256 recorded below before any use.
+
+source:
+  name: "PJM transmission-zone boundary (PJM-published service territory)"
+  fallback: "US Census TIGER/Line state polygons clipped to PJM states (reproducibility fallback)"
+version: "TODO (publisher vintage + access date, fixed at acquisition)"
+format: "GeoJSON (preferred) or Shapefile (converted to GeoJSON on ingest)"
+crs: "EPSG:4326"
+path: "data/raw/external/pjm_boundary.geojson"
+sha256: "TODO (recorded at acquisition; verified before any weight computation)"

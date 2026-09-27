@@ -1,0 +1,32 @@
+{
+  "file_readable": true,
+  "crs": "EPSG:4326 (carried; source NAD83, meter-level equivalence)",
+  "crs_valid": true,
+  "geometry_valid": true,
+  "non_empty": true,
+  "n_state_polygons": 14,
+  "states": [
+    "Delaware",
+    "District of Columbia",
+    "Illinois",
+    "Indiana",
+    "Kentucky",
+    "Maryland",
+    "Michigan",
+    "New Jersey",
+    "North Carolina",
+    "Ohio",
+    "Pennsylvania",
+    "Tennessee",
+    "Virginia",
+    "West Virginia"
+  ],
+  "bbox": {
+    "west": -91.511956,
+    "south": 33.851112,
+    "east": -73.893979,
+    "north": 48.21065
+  },
+  "fallback": true,
+  "overall": "PASS (fallback)"
+}

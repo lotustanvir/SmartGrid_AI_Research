@@ -1,0 +1,11 @@
+{
+  "source_boundary": "data/raw/external/pjm_boundary.geojson",
+  "crs": "EPSG:4326",
+  "north": 48.21065,
+  "south": 33.851112,
+  "east": -73.893979,
+  "west": -91.511956,
+  "created_date": "2026-09-25",
+  "fallback": true,
+  "buffer_note": "unbuffered polygon bbox; 0.25deg rim applied at ERA5 request (see PJM_BBOX_CARD)"
+}

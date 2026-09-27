@@ -1,0 +1,49 @@
+# Weather acquisition/aggregation spec — Phase 1C skeleton (NOT executed).
+# Authority: docs/PHASE1B_WEATHER_DESIGN.md, docs/WEATHER_CARD.md, docs/PROTOCOL.md
+# No downloads performed. No pipeline wired. Consumed by src/data/weather.py (Phase 1D+).
+
+project:
+  name: "SmartGrid_AI_Research"
+  timezone: "UTC"
+  period:
+    start: "2020-01-01 05:00:00"
+    end: "2026-01-01 04:00:00"
+    frequency: "1h"
+
+era5:
+  source:
+    provider: "ERA5"
+    dataset: "reanalysis-era5-single-levels"
+    variables:
+      - "2m_temperature"
+      - "relative_humidity"
+      - "dew_point_temperature"
+      - "10m_wind_speed"
+      - "total_cloud_cover"
+  request: {}  # CDS API request JSON archived here on first pull (Phase 1D)
+
+noaa:
+  source:
+    provider: "NOAA"
+    stations: []  # e.g. ["725020", "724080"] — station IDs fixed at acquisition time
+    validation_only: true
+
+aggregation:
+  method: "population_weighted_mean"
+  sensitivity: "simple_mean"
+  weights_version: "TODO (census weights vintage + file hash, fixed Phase 1D)"
+
+output:
+  raw_path: "data/raw/weather/"
+  processed_path: "data/processed/v2/"
+  dataset: "pjm_weather_2020_2025.csv"
+
+validation:
+  missing_threshold:
+    era5: 0.0
+    noaa_per_station: "reported, no fixed gate"
+  temperature_range: [-40.0, 45.0]
+  humidity_range: [0.0, 100.0]
+  wind_min: 0.0
+  cloud_range: [0.0, 1.0]
+  outlier_z: 5.0

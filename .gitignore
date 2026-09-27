@@ -58,3 +58,30 @@ models/*.joblib
 # Large processed sequence dataset
 dataset/processed/pjm_sequences.csv
 
+
+# ============================================================
+# SmartGrid research bulk data / generated artifacts
+# ============================================================
+
+# ERA5 raw monthly NetCDF files
+data/raw/weather/era5/monthly/*.nc
+
+# ERA5 acquisition/runtime logs
+data/raw/weather/era5/monthly/*.log
+data/raw/weather/era5/monthly/*.log.*
+
+# Generated model checkpoints
+results/**/checkpoints/
+results/**/checkpoints/*
+saved_models/**/*.pkl
+saved_models/**/*.pt
+saved_models/**/*.pth
+saved_models/**/*.ckpt
+saved_models/**/*.joblib
+
+# Legacy/generated large datasets
+data/processed/pjm_sequences.csv
+
+
+# Generated prediction artifacts
+results/**/predictions/*.csv

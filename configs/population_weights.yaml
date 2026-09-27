@@ -1,0 +1,16 @@
+# Population weight spec — Phase 1D-B DESIGN ONLY (not acquired).
+# Authority: docs/POPULATION_WEIGHT_CARD.md, docs/PJM_WEATHER_FOOTPRINT.md sections 4-6,
+#   configs/pjm_weather_weights.yaml (population block).
+# No files downloaded. Product lands in data/raw/external/ (Phase 1D+)
+# with version + hash recorded below before any weight computation.
+
+source:
+  name: "Gridded Population of the World (GPW), NASA SEDAC"
+  fallback: "WorldPop unconstrained top-down product (sensitivity cross-check)"
+dataset: "TODO (exact GPW revision + vintage file, fixed at acquisition)"
+reference_year: 2020
+spatial_unit: "TODO (native product resolution; aggregated UP to ERA5 0.25deg cells, never downscaled)"
+resolution: "TODO (native, e.g. 30 arc-sec; confirmed at acquisition)"
+crs: "EPSG:4326"
+weight_method: "population_weighted (w_i = pop_i / total_pop; sensitivity: simple_mean)"
+output_file: "data/processed/v2/pjm_footprint_weights.csv"

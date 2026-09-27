@@ -1,0 +1,267 @@
+{
+  "generated_utc": "2026-09-26T13:48:33Z",
+  "v1_source": {
+    "path": "dataset/processed/pjm_smart_grid_2020_2025.csv",
+    "sha256": "579f0edd8a4841dcade364badd7129c52b8d56d2c149da3c4c238db1e05853be",
+    "rows": 52608,
+    "range": [
+      "2020-01-01 05:00:00",
+      "2026-01-01 04:00:00"
+    ],
+    "modified": false
+  },
+  "weather_source": {
+    "spec": "configs/era5_request_v2.json",
+    "validation_report": "results/q1/weather_validation_report.json",
+    "months_available": [
+      "2020-01",
+      "2020-02",
+      "2020-03",
+      "2020-04",
+      "2020-05",
+      "2020-06",
+      "2020-07",
+      "2020-08",
+      "2020-09",
+      "2020-10",
+      "2020-11",
+      "2020-12",
+      "2021-01",
+      "2021-02",
+      "2021-03",
+      "2021-04",
+      "2021-05",
+      "2021-06",
+      "2021-07",
+      "2021-08",
+      "2021-09",
+      "2021-10",
+      "2021-11",
+      "2021-12",
+      "2022-01",
+      "2022-02",
+      "2022-03",
+      "2022-04",
+      "2022-05",
+      "2022-06",
+      "2022-07",
+      "2022-08",
+      "2022-09",
+      "2022-10",
+      "2022-11",
+      "2022-12",
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12"
+    ],
+    "months_missing": []
+  },
+  "outputs": {
+    "weather": {
+      "path": "data/processed/pjm_weather_2020_2025.csv",
+      "sha256": "55dbc5adc79dab6b35e22b89f307b4d9989625c95a963b1d1d34e5c2b90b273b",
+      "rows": 52608
+    },
+    "v2": {
+      "path": "dataset/processed/pjm_smart_grid_2020_2025_v2.csv",
+      "sha256": "fb261563977bd9c096b96a5402914e1b511cd880b34293e0aad9bf421b6db486",
+      "rows": 52608
+    }
+  },
+  "v1_rows": 52608,
+  "v2_rows": 52608,
+  "rows_before_merge": 52608,
+  "rows_after_merge": 52608,
+  "rows_dropped_by_merge": 0,
+  "join": {
+    "method": "merge_asof backward tolerance=1h",
+    "matched": 52604,
+    "rows_preserved_pct": 100.0,
+    "rows_dropped_by_merge": 0,
+    "weather_matched_pct": 99.992,
+    "retention_pct": 99.992,
+    "weather_coverage_pct": 99.992,
+    "first_20_unmatched": [
+      "2026-01-01 01:00:00",
+      "2026-01-01 02:00:00",
+      "2026-01-01 03:00:00",
+      "2026-01-01 04:00:00"
+    ]
+  },
+  "missing_pct_v2": {
+    "pjm_load_mw": 0.0,
+    "wind_generation_mw": 0.0,
+    "solar_generation_mw": 0.0,
+    "temperature": 7.603406326034063e-05,
+    "humidity": 7.603406326034063e-05,
+    "wind_speed": 7.603406326034063e-05,
+    "cloud_cover": 7.603406326034063e-05,
+    "solar_radiation": 7.603406326034063e-05,
+    "total_renewable": 0.0,
+    "net_load": 0.0,
+    "renewable_penetration": 0.0,
+    "cdh": 7.603406326034063e-05,
+    "hdh": 7.603406326034063e-05
+  },
+  "feature_list": [
+    "timestamp",
+    "pjm_load_mw",
+    "wind_generation_mw",
+    "solar_generation_mw",
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "cloud_cover",
+    "solar_radiation",
+    "total_renewable",
+    "net_load",
+    "renewable_penetration",
+    "cdh",
+    "hdh"
+  ],
+  "feature_provenance": {
+    "temperature": "ERA5 t2m footprint mean, K->C",
+    "humidity": "Magnus RH from footprint T/Td",
+    "wind_speed": "sqrt(u10^2+v10^2) footprint mean",
+    "cloud_cover": "ERA5 tcc normalised 0-1",
+    "solar_radiation": "ssrd de-accumulated W/m2 footprint mean",
+    "cdh": "max(T-22,0)",
+    "hdh": "max(18-T,0)"
+  },
+  "weights": "data/processed/v2/pjm_footprint_weights.csv",
+  "leakage_notes": "merge_asof backward-only; no forward fill; weather columns are contemporaneous (nowcast assumption per WEATHER_CARD S7 -- 24h-lagged sensitivity required before operational claims).",
+  "row_count": 52608,
+  "column_count": 14,
+  "columns": [
+    "timestamp",
+    "pjm_load_mw",
+    "wind_generation_mw",
+    "solar_generation_mw",
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "cloud_cover",
+    "solar_radiation",
+    "total_renewable",
+    "net_load",
+    "renewable_penetration",
+    "cdh",
+    "hdh"
+  ],
+  "missing_values_per_column": {
+    "timestamp": 0,
+    "pjm_load_mw": 0,
+    "wind_generation_mw": 0,
+    "solar_generation_mw": 0,
+    "temperature": 4,
+    "humidity": 4,
+    "wind_speed": 4,
+    "cloud_cover": 4,
+    "solar_radiation": 4,
+    "total_renewable": 0,
+    "net_load": 0,
+    "renewable_penetration": 0,
+    "cdh": 4,
+    "hdh": 4
+  },
+  "weather_coverage_pct": 99.992,
+  "timestamp_continuity": {
+    "v2_min": "2020-01-01 05:00:00",
+    "v2_max": "2026-01-01 04:00:00",
+    "duplicates": 0,
+    "monotonic_increasing": true,
+    "gaps_vs_range": 0,
+    "weather_min": "2020-01-01 00:00:00",
+    "weather_max": "2025-12-31 23:00:00",
+    "weather_rows": 52608,
+    "unmatched_tail": [
+      "2026-01-01 01:00:00",
+      "2026-01-01 02:00:00",
+      "2026-01-01 03:00:00",
+      "2026-01-01 04:00:00"
+    ]
+  },
+  "checksum_verification": {
+    "v1_sha256_match": true,
+    "weather_sha256_match": true,
+    "v2_sha256_match": true,
+    "actual": {
+      "v1": "579f0edd8a4841dcade364badd7129c52b8d56d2c149da3c4c238db1e05853be",
+      "weather": "55dbc5adc79dab6b35e22b89f307b4d9989625c95a963b1d1d34e5c2b90b273b",
+      "v2": "fb261563977bd9c096b96a5402914e1b511cd880b34293e0aad9bf421b6db486"
+    }
+  },
+  "source_provenance": {
+    "v1": {
+      "path": "dataset/processed/pjm_smart_grid_2020_2025.csv",
+      "sha256": "579f0edd8a4841dcade364badd7129c52b8d56d2c149da3c4c238db1e05853be",
+      "rows": 52608,
+      "range": [
+        "2020-01-01 05:00:00",
+        "2026-01-01 04:00:00"
+      ],
+      "modified": false
+    },
+    "weather_series": {
+      "path": "data/processed/pjm_weather_2020_2025.csv",
+      "sha256": "55dbc5adc79dab6b35e22b89f307b4d9989625c95a963b1d1d34e5c2b90b273b",
+      "rows": 52608
+    },
+    "era5_months": 72,
+    "era5_spec": "configs/era5_request_v2.json",
+    "weights": "data/processed/v2/pjm_footprint_weights.csv"
+  },
+  "coverage_investigation": {
+    "unmatched_rows": 4,
+    "unmatched_timestamps": [
+      "2026-01-01 01:00:00",
+      "2026-01-01 02:00:00",
+      "2026-01-01 03:00:00",
+      "2026-01-01 04:00:00"
+    ],
+    "columns_with_missing": [
+      "temperature",
+      "humidity",
+      "wind_speed",
+      "cloud_cover",
+      "solar_radiation",
+      "cdh",
+      "hdh"
+    ],
+    "missing_cells": 28,
+    "cause": "V1 tail extends to 2026-01-01 04:00 but ERA5/weather ends 2025-12-31 23:00; merge_asof backward tolerance=1h matches 2026-01-01 00:00 but not 01-04h. Expected boundary effect, not a data bug. ERA5 gate=pass, all 72 months present."
+  }
+}

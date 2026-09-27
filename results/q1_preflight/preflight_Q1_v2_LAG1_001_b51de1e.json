@@ -1,0 +1,32 @@
+{
+  "status": "PREFLIGHT_COMPLETED_NON_RESULT",
+  "protocol_version": "Q1_v2_LAG1_001",
+  "note": "Preflight only. NOT headline results. Models NOT ranked. Nothing trained.",
+  "dataset_sha256": "fb261563977bd9c096b96a5402914e1b511cd880b34293e0aad9bf421b6db486",
+  "feature_schema_hash": "ed0f6f5fb4df31566fb3b866c14810f7970a1865c8a0ee0b63b7c6b02a85705e",
+  "origin_set_hash": "573de597b4ac4a4f7f2db79ff57045a0308ec38e013a329f16ae8017b19fe2ce",
+  "origin_artifact": "experiments\\protocol\\test_origins.csv",
+  "split_rows": {
+    "train": 34891,
+    "val": 8784,
+    "test": 8760
+  },
+  "manifest_size": 81,
+  "checks": {
+    "dataset_gate": "PASS",
+    "feature_gate": "PASS",
+    "split_gate": "PASS",
+    "origin_gate": "PASS",
+    "manifest_81_deterministic": "PASS",
+    "headline_guard": "PASS",
+    "seed_rules": "PASS",
+    "feature_propagation": "PASS",
+    "origin_propagation_alignment": "PASS",
+    "mase_wiring": "PASS",
+    "tft_test_exclusion": "PASS",
+    "hybrid_test_exclusion": "PASS",
+    "registry_fields": "PASS",
+    "stale_artifact_absent": "PASS"
+  },
+  "preflight": "PASS"
+}

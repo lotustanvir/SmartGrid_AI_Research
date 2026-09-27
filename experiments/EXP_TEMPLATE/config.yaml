@@ -1,0 +1,16 @@
+# PLACEHOLDER — copy per experiment, fill before running.
+exp_id: "EXP000_template_hAll_sDet"
+dataset:
+  version: "TODO (file + sha256)"
+features:
+  group: "TODO (A-E + column hash)"
+model:
+  name: "TODO (class + git tag)"
+  horizon: "TODO (1/6/24)"
+hyperparameters: {}
+seed: 42
+splits:
+  train: "2020-01/2023-12"
+  val: "2024"
+  test: "2025"
+  origins: "TODO (origin-set hash)"

@@ -1,0 +1,24 @@
+# PJM weather-footprint weight spec — Phase 1D-A DESIGN ONLY (not executed).
+# Authority: docs/PHASE1B_WEATHER_DESIGN.md section 3, docs/WEATHER_CARD.md section 4,
+#   docs/PJM_WEATHER_FOOTPRINT.md (methodology lock).
+# No downloads performed. No weights computed. Consumed by src/data/weather.py (Phase 1D+).
+
+footprint:
+  boundary_source: "TODO (PJM transmission-zone boundary dataset + version/hash, fixed before acquisition)"
+  coordinate_system: "EPSG:4326 (WGS 84, decimal degrees)"
+  era5_resolution: "0.25deg x 0.25deg (ERA5 single-levels native grid)"
+  inclusion_rule: "ERA5 cell centroid inside PJM boundary polygon"
+
+weight_method:
+  primary: "population_weighted"
+  sensitivity: "simple_mean"
+
+population:
+  source: "TODO (gridded population product + version, fixed before acquisition)"
+  spatial_unit: "TODO (native product resolution, e.g. 30 arc-sec aggregated to ERA5 cells)"
+  reference_year: "TODO (single census vintage, e.g. 2020; fixed for full 2020-2025 window)"
+  crs: "EPSG:4326"
+
+output:
+  weights_file: "data/processed/v2/pjm_footprint_weights.csv"
+  coverage_report: "data/processed/v2/pjm_footprint_coverage.json"

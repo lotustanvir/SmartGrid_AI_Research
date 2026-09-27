@@ -1,0 +1,64 @@
+{
+  "file": "data/raw/weather/era5/monthly/era5_pjm_2020_06.nc",
+  "validation_date": "2026-09-24T21:03:21Z",
+  "checks": {
+    "netcdf_readable": true,
+    "variables_present": true,
+    "variables_detail": {
+      "2m_temperature": true,
+      "2m_dewpoint_temperature": true,
+      "10m_u_component_of_wind": true,
+      "10m_v_component_of_wind": true,
+      "total_cloud_cover": true
+    },
+    "hourly_contiguous": true,
+    "time_step_seconds": [
+      3600
+    ],
+    "n_time_steps": 720,
+    "expected_time_steps": 720,
+    "time_count_match": true,
+    "time_start": "2020-06-01T00:00:00.000000000",
+    "time_end": "2020-06-30T23:00:00.000000000",
+    "time_start_match": true,
+    "time_end_match": true,
+    "spatial_match": true,
+    "lat_range": [
+      33.5,
+      48.5
+    ],
+    "lon_range": [
+      -92.0,
+      -73.5
+    ],
+    "missing_values": {
+      "t2m": {
+        "n_nan": 0,
+        "n_total": 3294000,
+        "nan_frac": 0.0
+      },
+      "d2m": {
+        "n_nan": 0,
+        "n_total": 3294000,
+        "nan_frac": 0.0
+      },
+      "u10": {
+        "n_nan": 0,
+        "n_total": 3294000,
+        "nan_frac": 0.0
+      },
+      "v10": {
+        "n_nan": 0,
+        "n_total": 3294000,
+        "nan_frac": 0.0
+      },
+      "tcc": {
+        "n_nan": 0,
+        "n_total": 3294000,
+        "nan_frac": 0.0
+      }
+    },
+    "total_nan_frac": 0.0
+  },
+  "status": "PASS"
+}

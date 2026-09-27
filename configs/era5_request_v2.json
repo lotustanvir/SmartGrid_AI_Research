@@ -1,0 +1,45 @@
+{
+  "_note": "Phase 1D-C3 SPECIFICATION -- extends configs/era5_request.json with surface_solar_radiation_downwards (6th variable required for weather-aware v2 dataset). Original era5_request.json is UNTOUCHED; 2020 5-var monthly files remain valid and are supplemented by ssrd-only files (request_YYYY_MM_ssrd.json). Authority: task directive 2026-09-26 + docs/PHASE1B_WEATHER_DESIGN.md.",
+  "supersedes": null,
+  "extends": "configs/era5_request.json (same bbox, years, months, days, hours, format)",
+  "dataset": "reanalysis-era5-single-levels",
+  "product": "reanalysis (ERA5 hourly data on single levels)",
+  "variables": [
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_cloud_cover",
+    "surface_solar_radiation_downwards"
+  ],
+  "variable_notes": {
+    "relative_humidity": "NOT a native ERA5 single-level variable -- derived from 2m_temperature + 2m_dewpoint_temperature via Magnus formula at aggregation time (documented in WEATHER_CARD derivation log)",
+    "10m_wind_speed": "derived as sqrt(u10^2 + v10^2) from u/v components at aggregation time",
+    "surface_solar_radiation_downwards": "NATIVE ERA5 accumulated variable (J/m^2 accumulated since 00:00 UTC each day). Hourly mean W/m^2 = max(0, ssrd(t)-ssrd(t-1h))/3600; midnight-reset diff clips to 0 (nighttime, negligible error). De-accumulation documented in scripts/process_era5.py.",
+    "total_cloud_cover": "NATIVE ERA5 units are PERCENT (0-100). Normalised to 0-1 fraction at aggregation time (divide by 100). Verified against raw value range during processing."
+  },
+  "years": ["2020", "2021", "2022", "2023", "2024", "2025"],
+  "months": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+  "days": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"],
+  "hours": ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"],
+  "time_note": "00:00-23:00 UTC hourly (ERA5 native). Tail extension to 2026-01-01 04:00 UTC required to cover PJM test end (see docs/ERA5_ACQUISITION_CARD.md section 4).",
+  "area": {
+    "strategy": "PJM bounding box (Option A) + 0.25deg rim, snapped outward to ERA5 grid (Option B buffer rule, docs/PJM_BBOX_CARD.md section 4)",
+    "north": 48.5,
+    "west": -92.0,
+    "south": 33.5,
+    "east": -73.5,
+    "cds_order": "[North, West, South, East]",
+    "unbuffered_polygon_bbox": {"north": 48.21065, "south": 33.851112, "east": -73.893979, "west": -91.511956},
+    "bbox_source": "data/raw/external/pjm_bbox.json (fallback boundary, 2026-09-25)"
+  },
+  "format": "netcdf",
+  "download_target": "data/raw/weather/era5/",
+  "acquisition_modes": {
+    "full_5var": "monthly/era5_pjm_<year>_<month>.nc for 2021-2025 with the 5 instantaneous variables (proven 2020 pattern; executed via scripts/download_era5_batch.py --mode full)",
+    "ssrd_supplement": "monthly/era5_pjm_<year>_<month>_ssrd.nc for 2020-2025 (ssrd only; merged with 5-var files at processing time, raw files untouched; executed via --mode ssrd). Rationale 2026-09-26: mixed instantaneous+accumulated CDS requests returned unreadable payloads (2021-01..03 quarantined, see batch_download_log.jsonl), so ssrd is always pulled separately.",
+    "deprecated_6var_single_request": "ABANDONED 2026-09-26 after 2021-01..03 unreadable-payload failures. Do not use."
+  },
+  "request_hash": "TODO (sha256 of this file at execution time)",
+  "created_date": "2026-09-26 (Phase 1D-C3 weather pipeline completion)"
+}
