@@ -1,0 +1,57 @@
+# Q1 canonical dataset mapping — V2, lagged weather (Phase 2, FROZEN).
+# Canonical Q1 dataset: dataset/processed/pjm_smart_grid_2020_2025_v2.csv
+# 14 raw columns; model inputs use src/data/features_q1.py canonical schema
+# (lagged weather only; net_load/renewable_penetration EXCLUDED as
+# target-derived). Do NOT revert to V1 for Q1.
+
+data:
+  path: "dataset/processed/pjm_smart_grid_2020_2025_v2.csv"
+  timestamp_col: "timestamp"
+  target_col: "pjm_load_mw"
+  group_col: null
+  expected_freq: "h"
+  allow_negative_target: false
+  max_target_gap: 3
+  weather:
+    temperature: "temperature"
+    humidity: "humidity"
+    wind_speed: "wind_speed"
+    cloud: "cloud_cover"
+    solar_radiation: "solar_radiation"
+  renewable:
+    solar: "solar_generation_mw"
+    wind: "wind_generation_mw"
+  derived:
+    total_renewable: "total_renewable"
+    cdh: "cdh"
+    hdh: "hdh"
+    # Target-derived (documented, NEVER model inputs):
+    net_load_excluded: "net_load"
+    renewable_penetration_excluded: "renewable_penetration"
+  calendar:
+    holidays: false
+    dst: false
+    season: false
+cleaning:
+  exogenous_interp_method: "time"
+  exogenous_interp_limit: 6
+  allow_ffill_bfill: false
+  drop_target_na: true
+features:
+  schema: "Q1_V2_LAG1_001"
+  calendar: true
+  cyclical: true
+  lags: [1, 24, 168]
+  rolling_windows: [24, 168]
+  weather_rule: "lagged_only"
+  weather_lags: [1, 24, 168]
+  target_derived_excluded: ["net_load", "renewable_penetration"]
+protocol:
+  version: "Q1_v2_LAG1_001"
+  history_length: 168
+  horizons: [1, 6, 24]
+  train_end: "2024-01-01"
+  val_end: "2025-01-01"
+  test_end: "2026-01-01"
+  seeds: [42, 123, 2025]
+  oof_folds: 5
