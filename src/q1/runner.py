@@ -52,6 +52,7 @@ from src.data.provenance import (
     git_commit,
     package_versions,
     python_version,
+    sha256_canonical_text_file,
     sha256_file,
 )
 from src.data.splits_q1 import split_calendar
@@ -84,7 +85,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Locked expectations (must match src/q1/protocol.py; asserted at runtime)
 # ---------------------------------------------------------------------------
-Q1_LOCKED_DATASET_SHA = "fb261563977bd9c096b96a5402914e1b511cd880b34293e0aad9bf421b6db486"
+Q1_LOCKED_DATASET_SHA = "2b4dbabfacb777bf159927603df9ff3f2079fec2287850ff31f117d495a4d110"
 Q1_LOCKED_FEATURE_HASH = "ed0f6f5fb4df31566fb3b866c14810f7970a1865c8a0ee0b63b7c6b02a85705e"
 Q1_LOCKED_N_FEATURES = 49
 Q1_LOCKED_SPLIT_COUNTS = {"train": 34891, "val": 8784, "test": 8760}
@@ -217,7 +218,7 @@ def load_and_validate_dataset(dataset_path: str = Q1_DATASET_PATH) -> tuple[pd.D
             f"Q1 runner loads ONLY {Q1_DATASET_PATH!r}, got {dataset_path!r}."
         )
     raw = pd.read_csv(dataset_path)
-    sha = sha256_file(dataset_path)
+    sha = sha256_canonical_text_file(dataset_path)
     if sha != Q1_LOCKED_DATASET_SHA:
         raise ValueError(
             f"Q1 dataset SHA mismatch: got {sha!r}, expected {Q1_LOCKED_DATASET_SHA!r}."

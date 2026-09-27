@@ -27,6 +27,21 @@ def sha256_file(path: str | Path, chunk: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
+def sha256_canonical_text_file(path: str | Path) -> str:
+    """SHA256 of text-file content with CRLF/CR normalized to LF.
+
+    This provides a cross-platform content identity for canonical text
+    datasets. The generic sha256_file() remains byte-exact and unchanged.
+    """
+    p = Path(path)
+    if not p.is_file():
+        raise FileNotFoundError(f"Provenance file not found: {p}")
+
+    data = Path(path).read_bytes()
+    data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
 def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
